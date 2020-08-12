@@ -72,7 +72,7 @@
         <div class="header">
             <div class="container">
                 <nav class="navbar">
-                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="index-2.html"> <img alt="fastrod" src="images/logo.png"> </a> </div>
+                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="images/dlogo.jpg"> </a> </div>
                     <div class="header-right pull-right mtb_50">
                         <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
                         <div class="shopping-icon">
@@ -331,7 +331,7 @@
                 <div class="col-md-3 footer-block">
                     <div class="content_footercms_right">
                         <div class="footer-contact">
-                            <div class="footer-logo mb_40"> <a href="index-2.html"> <img src="images/footer-logo.png" alt="fastro"> </a> </div>
+                            <div class="footer-logo mb_40"> <a href="{{url('/')}}"> <img src="images/dlogo.jpg" alt="fastro"> </a> </div>
                             <ul>
                                 <li>B-14 Collins Street West Victoria 2386</li>
                                 <li>(+123) 456 789 - (+024) 666 888</li>
