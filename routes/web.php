@@ -17,3 +17,11 @@ Route::get('home', function () {
     return view('welcome');
 });
 Route::view('/','index');
+Route::view('productDetail','productDetail');
+Route::view('cart','cart');
+Route::view('checkout','checkout');
+Route::view('category','category');
+
+
+
+
