@@ -21,15 +21,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="viewport" content="width=device-width">
     <!-- =====  CSS  ===== -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/owl.carousel.css')}}">
+    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
+    <link rel="apple-touch-icon" href="{{asset('images/apple-touch-icon.html')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('images/apple-touch-icon-72x72.html')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('images/apple-touch-icon-114x114.html')}}">
 </head>
 <body>
 <!-- =====  LODER  ===== -->
@@ -46,9 +46,13 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <ul class="header-top-right text-right">
-                            <li class="account"><a href="login.html">My Account</a></li>
-                            <li class="sitemap"><a href="#">Sitemap</a></li>
-                            <li class="cart"><a href="cart_page.html">My Cart</a></li>
+                            @if(\Illuminate\Support\Facades\Auth::check())
+                            <li class="account"><a href="{{url('dashboard')}}">{{\Illuminate\Support\Facades\Auth::user()->name}}'s Account</a></li>
+                            @else
+                                <li class="account"><a href="{{url('Login')}}">Login</a></li>
+                            @endif
+                                <li class="sitemap"><a href="{{url('trackOrder')}}">Track Order</a></li>
+                            <li class="cart"><a href="{{url('cart')}}">My Cart</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,32 +61,30 @@
         <div class="header">
             <div class="container">
                 <nav class="navbar">
-                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="images/dlogo.jpg"> </a> </div>
+                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="{{asset('images/dlogo.jpg')}}"> </a> </div>
                     <div class="header-right pull-right mtb_50">
                         <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
                         <div class="shopping-icon">
-                            <div class="cart-item " data-target="#cart-dropdown" data-toggle="collapse" aria-expanded="true" role="button">Item's : <span class="cart-qty">02</span></div>
+                            <div class="cart-item " data-target="#cart-dropdown" data-toggle="collapse" aria-expanded="true" role="button">Item's : <span class="cart-qty">{{\Illuminate\Support\Facades\Session::has('cat') ? \Illuminate\Support\Facades\Session::get('cat')->totalQty: ''}}</span></div>
                             <div id="cart-dropdown" class="cart-menu collapse">
                                 <ul>
                                     <li>
                                         <table class="table table-striped">
                                             <tbody>
-                                            <tr>
-                                                <td class="text-center"><a href="#"><img src="images/product/70x84.jpg" alt="iPod Classic" title="iPod Classic"></a></td>
-                                                <td class="text-left product-name"><a href="#">MacBook Pro</a>
-                                                    <span class="text-left price">Ksh:20.00</span>
-                                                    <input class="cart-qty" name="product_quantity" min="1" value="1" type="number">
+                                            @if(isset($products))
+                                                @foreach($products as $product)
+                                                <tr>
+                                                <td class="text-center"><a href="#"><img src="{{asset('uploads/product/'.$product['item']['product_image'])}}" alt="iPod Classic" title="iPod Classic"></a></td>
+                                                <td class="text-left product-name"><a href="#">{{$product['item']['product_name']}}</a>
+                                                    <span class="text-left price">{{$product['quantity']}} x Ksh: {{$product['item']['product_price']}}</span>
                                                 </td>
-                                                <td class="text-center"><a class="close-cart"><i class="fa fa-times-circle"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center"><a href="#"><img src="images/product/70x84.jpg" alt="iPod Classic" title="iPod Classic"></a></td>
-                                                <td class="text-left product-name"><a href="#">MacBook Pro</a>
-                                                    <span class="text-left price">Ksh:20.00</span>
-                                                    <input class="cart-qty" name="product_quantity" min="1" value="1" type="number">
+                                                <td class="text-center">
+
+                                                    <a href="{{url('cartReduceByOne',$product['item']['id'])}}" class="close-cart"><i class="fa fa-times-circle"></i></a>
                                                 </td>
-                                                <td class="text-center"><a class="close-cart"><i class="fa fa-times-circle"></i></a></td>
                                             </tr>
+                                                @endforeach
+                                                @endif
                                             </tbody>
                                         </table>
                                     </li>
@@ -90,29 +92,17 @@
                                         <table class="table">
                                             <tbody>
                                             <tr>
-                                                <td class="text-right"><strong>Sub-Total</strong></td>
-                                                <td class="text-right">Ksh:2,100.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
-                                                <td class="text-right">Ksh:2.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-right"><strong>VAT (20%)</strong></td>
-                                                <td class="text-right">Ksh:20.00</td>
-                                            </tr>
-                                            <tr>
                                                 <td class="text-right"><strong>Total</strong></td>
-                                                <td class="text-right">Ksh:2,122.00</td>
+                                                <td class="text-right">Ksh:{{$totalPrice}}</td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </li>
                                     <li>
-                                        <form action="http://html.lionode.com/fastro/f001/cart_page.html">
+                                        <form action="{{url('cart')}}">
                                             <input class="btn pull-left mt_10" value="View cart" type="submit">
                                         </form>
-                                        <form action="http://html.lionode.com/fastro/f001/checkout_page.html">
+                                        <form action="{{url('checkout')}}">
                                             <input class="btn pull-right mt_10" value="Checkout" type="submit">
                                         </form>
                                     </li>
@@ -142,10 +132,10 @@
                         <ul id="menu" class="nav navbar-nav">
                             <li> <a href="{{url('/')}}">Home</a></li>
                             <li> <a href="{{url('category')}}">Shop</a></li>
-                            <li> <a href="{{url('cart')}}">Cart</a></li>
-                            <li class="dropdown"> <a href="{{url('productDetail')}}">Product Details</a>
+                            <li> <a href="{{url('cart')}}">Services</a></li>
+                            <li class="dropdown"> <a href="{{url('productDetail')}}">About Us</a>
                             </li>
-                            <li> <a href="{{url('checkout')}}">Checkout</a></li>
+                            <li> <a href="#">Contacts</a></li>
                         </ul>
                     </div>
 
@@ -196,7 +186,8 @@
             </div>
         </div>
     </header>
-    <!-- =====  HEADER END  ===== -->
+@include('flash-message')
+<!-- =====  HEADER END  ===== -->
 
     <!-- =====  CONTAINER START  ===== -->
     <div class="container">

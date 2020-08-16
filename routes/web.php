@@ -16,12 +16,47 @@ use Illuminate\Support\Facades\Route;
 Route::get('home', function () {
     return view('welcome');
 });
-Route::view('/','index');
-Route::view('productDetail','productDetail');
-Route::view('cart','cart');
-Route::view('checkout','checkout');
-Route::view('category','category');
+//customer Routes
+Route::get('/','ProductController@home');
+Route::resource('productDetail','ProductDetailController');
+Route::resource('cart','CartController');
+Route::get('cartReduceByOne/{id}','CartController@getReduceByOne');
+Route::get('addByOne/{id}','CartController@addByOne');
+Route::get('cartReduceByOne/{id}','CartController@getReduceByOne');
+Route::get('cartRemove/{id}','CartController@removeItem');
+Route::resource('checkout','CheckoutController');
+Route::resource('category','CategoryController');
+Route::resource('Login','LoginController');
+Route::post('placeOrder','CheckoutController@placeOrder');
+Route::post('LoginUser','LoginController@login')->name('loginCustomOne');
+Route::post('RegisterUser','LoginController@register')->name('registerCustomOne');
+Route::get('success','CheckoutController@success');
+Route::resource('dashboard','DashController');
+
+Route::resource('trackOrder','TrackController');
 
 
 
 
+//admin Routes
+Route::view('admin','admin.index');
+Route::get('admin/order','OrderController@index');
+Route::get('ajax','OrderController@getOrderDetails');
+Route::resource('stock','ProductController');
+Route::get('deleteProduct/{id}','ProductController@deleteProduct');
+Route::post('eProduct','ProductController@eProduct');
+Route::get('editProductDetails/{id}','ProductController@editProductDetails');
+Route::post('confirmOrder','OrderController@confirm');
+Route::get('orderDetails','OrderController@orderDetails');
+
+
+
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

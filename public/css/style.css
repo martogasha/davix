@@ -275,7 +275,7 @@ h6 {
 	margin-top: 30px;
 }
 .mt_40 {
-	margin-top: 40px;
+	margin-top: -15px;
 }
 .mt_50 {
 	margin-top: 50px;
@@ -992,7 +992,7 @@ label.checkme {
 	padding: 15px 0;
 }
 .navbar-header .navbar-brand {
-	height: auto;
+	height:auto;
 }
 .header.navbar, #category-menu.navbar {
 	margin-bottom: 0;
