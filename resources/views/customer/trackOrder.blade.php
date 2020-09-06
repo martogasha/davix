@@ -35,8 +35,8 @@
                         <td><img src="uploads/product/{{$order->product->product_image}}" style="width: 50px;height: 50px"> </td>
                         <td>{{$order->product->product_name}}</td>
                         <td>{{$order->product->product_price}}</td>
-                        <td>{{$order->quantity}}</td>
-                        <td>{{$order->product->product_price * $order->quantity}}</td>
+                        <td>{{$order->order_quantity}}</td>
+                        <td>{{$order->product->product_price * $order->order_quantity}}</td>
                         <td><span class="badge badge-info">{{$order->order_status}}</span></td>
                         <td><span class="badge badge-danger">{{$order->order_status1}}</span></td>
 

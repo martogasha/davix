@@ -85,21 +85,24 @@
             </li>
             <li class="dropdown">
                 <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-                    <span class="user-name">Zyan Ferris</span>
-                    <span class="avatar">ZF<span class="status busy"></span></span>
+                    <span class="user-name">{{\Illuminate\Support\Facades\Auth::user()->user_name}}</span>
+                    <span class="avatar"><span class="status busy"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
                     <div class="header-profile-actions">
                         <div class="header-user-profile">
                             <div class="header-user">
-                                <img src="{{asset('asset/img/user.png')}}" alt="Admin Template" />
+                                <img src="asset/img/user55.jpeg" alt="Admin Template" />
                             </div>
-                            <h5>Zyan Ferris</h5>
+                            <h5>{{\Illuminate\Support\Facades\Auth::user()->user_name}}</h5>
                             <p>Admin</p>
                         </div>
                         <a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
                         <a href="account-settings.html"><i class="icon-settings1"></i> Account Settings</a>
-                        <a href="login.html"><i class="icon-log-out1"></i> Sign Out</a>
+                        <form action="{{route('logout')}}" method="post" id="logout">
+                            @csrf
+                            <a href="javascript:document.getElementById('logout').submit()"><i class="icon-log-out1"></i> Sign Out</a>
+                        </form>
                     </div>
                 </div>
             </li>
@@ -278,6 +281,12 @@
                         Order Details
                     </a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{url('rating')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Product Rating
+                    </a>
+                </li>
             </ul>
         </div>
         @include('flash-message')
@@ -305,9 +314,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print">
+                    <button id="cmd">
                         <i class="icon-print"></i>
-                    </a>
+                    </button>
                 </li>
                 <li>
                     <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Download CSV">
@@ -332,14 +341,14 @@
                         <th>Actions</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody  id="target">
                     @foreach($orders as $order)
                     <tr>
                         <td># {{$order->id}}</td>
-                        <td>{{$order->user->name}}</td>
-                        <td>{{$order->user->phone}}</td>
+                        <td>{{$order->user->user_name}}</td>
+                        <td>{{$order->user->user_phone}}</td>
                         <td><span class="badge badge-info">{{$order->order_status}}</span></td>
-                        <td><span class="badge badge-danger">{{$order->order_status1}}</span></td>
+                        <td><span class="badge badge-success">{{$order->order_status1}}</span></td>
                         <td><button type="button" class="btn btn-primary view" id="{{$order->user_id}}" data-toggle="modal" data-target=".bd-example-modal-lg">View</button>
                         </td>
                     </tr>
@@ -431,6 +440,7 @@
 <script src="{{asset('asset/vendor/gallery/baguetteBox.js')}}" async></script>
 <script src="{{asset('asset/vendor/gallery/plugins.js')}}" async></script>
 <script src="{{asset('asset/vendor/gallery/custom-gallery.js')}}" async></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
 
 <!-- Main Js Required -->
 <script src="{{asset('asset/js/main.js')}}"></script>
@@ -452,6 +462,21 @@
 
             }
 
+        });
+    });
+    $(function () {
+
+        var specialElementHandlers = {
+            '#editor': function (element,renderer) {
+                return true;
+            }
+        };
+        $('#cmd').click(function () {
+            var doc = new jsPDF();
+            doc.fromHTML($('#target').html(), 15, 15, {
+                'width': 170,'elementHandlers': specialElementHandlers
+            });
+            doc.save('orderReport-file.pdf');
         });
     });
 </script>

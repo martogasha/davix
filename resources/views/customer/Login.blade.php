@@ -61,7 +61,19 @@
                                                 <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="" required>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" name="phone" id="email" tabindex="1" class="form-control" placeholder="Phone" value="" required>
+
+                                                    <div class="phone-list">
+
+                                                        <div class="input-group phone-input">
+						                        <span class="input-group-btn">
+							                    <button type="button" class="btn btn-default dropdown-toggle" aria-expanded="false"><span class="type-text">+254</span></button>
+						                        </span>
+                                                            <input type="text" name="phone" class="form-control" placeholder="712345678" />
+                                                        </div>
+
+
+                                                </div>
+
                                             </div>
                                             <div class="form-group">
                                                 <input type="text" name="location" id="email" tabindex="1" class="form-control" placeholder="Location" value="" required>

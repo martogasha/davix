@@ -45,7 +45,7 @@
                     <div class="col-sm-6">
                         <ul class="header-top-right text-right">
                             @if(\Illuminate\Support\Facades\Auth::check())
-                                <li class="account"><a href="">{{\Illuminate\Support\Facades\Auth::user()->name}}</a></li>
+                                <li class="account"><a href="">{{\Illuminate\Support\Facades\Auth::user()->user_name}}</a></li>
                             @else
                                 <li class="account"><a href="{{url('Login')}}">Login</a></li>
                             @endif
@@ -72,9 +72,10 @@
                                 <!-- End Close Icon -->
                                 <div class="container">
                                     <!-- Search Form -->
-                                    <form role="search" id="searchform" action="http://html.lionode.com/search" method="get">
+                                    <form action="{{url('search')}}" method="post">
+                                        @csrf
                                         <label class="h5 normal search-input-label" >Enter keywords To Search Entire Store</label>
-                                        <input value="" name="q" placeholder="Search here..." type="search">
+                                        <input value="" name="searchProduct" placeholder="Search here..." type="search">
                                         <button type="submit"></button>
                                     </form>
                                     <!-- End Search Form -->
@@ -114,19 +115,16 @@
 
                                 <ul class="nav  main-navigation collapse in">
 
-                                    <li><a href="#">Appliances</a></li>
-                                    <li><a href="#">Mobile Phones</a></li>
-                                    <li><a href="#">Tablet PC & Accessories</a></li>
-                                    <li><a href="#">Consumer Electronics</a></li>
-                                    <li><a href="#">Computers & Networking</a></li>
-                                    <li><a href="#">Electrical & Tools</a></li>
-                                    <li><a href="#">Apparel</a></li>
-                                    <li><a href="#">Bags & Shoes</a></li>
-                                    <li><a href="#">Toys & Hobbies</a></li>
-                                    <li><a href="#">Watches & Jewelry</a></li>
-                                    <li><a href="#">Home & Garden</a></li>
-                                    <li><a href="#">Health & Beauty</a></li>
-                                    <li><a href="#">Outdoors & Sports</a></li>
+                                    <li><a href="{{url('computers')}}">Computer & Office</a></li>
+                                    <li><a href="{{url('electronics')}}">Electronics and Home Appliance</a></li>
+                                    <li><a href="{{url('networking')}}">Networking and Telecom</a></li>
+                                    <li><a href="{{url('consumer')}}">Consumer Electronics</a></li>
+                                    <li><a href="{{url('phones')}}">Phones and Tablets</a></li>
+                                    <li><a href="{{url('printers')}}">Printers and Consumables</a></li>
+                                    <li><a href="{{url('cctv')}}">CCTV and Safety</a></li>
+                                    <li><a href="{{url('laptops')}}">Laptops</a></li>
+                                    <li><a href="{{url('storage')}}">Storage</a></li>
+                                    <li><a href="{{url('software')}}">Softwares</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -155,19 +153,16 @@
                 <div id="category-menu" class="navbar collapse in  mb_40" aria-expanded="true" style="" role="button">
                     <div class="nav-responsive">
                         <ul class="nav  main-navigation collapse in">
-                            <li><a href="#">Appliances</a></li>
-                            <li><a href="#">Mobile Phones</a></li>
-                            <li><a href="#">Tablet PC & Accessories</a></li>
-                            <li><a href="#">Consumer Electronics</a></li>
-                            <li><a href="#">Computers & Networking</a></li>
-                            <li><a href="#">Electrical & Tools</a></li>
-                            <li><a href="#">Apparel</a></li>
-                            <li><a href="#">Bags & Shoes</a></li>
-                            <li><a href="#">Toys & Hobbies</a></li>
-                            <li><a href="#">Watches & Jewelry</a></li>
-                            <li><a href="#">Home & Garden</a></li>
-                            <li><a href="#">Health & Beauty</a></li>
-                            <li><a href="#">Outdoors & Sports</a></li>
+                            <li><a href="{{url('computers')}}">Computer & Office</a></li>
+                            <li><a href="{{url('electronics')}}">Electronics and Home Appliance</a></li>
+                            <li><a href="{{url('networking')}}">Networking and Telecom</a></li>
+                            <li><a href="{{url('consumer')}}">Consumer Electronics</a></li>
+                            <li><a href="{{url('phones')}}">Phones and Tablets</a></li>
+                            <li><a href="{{url('printers')}}">Printers and Consumables</a></li>
+                            <li><a href="{{url('cctv')}}">CCTV and Safety</a></li>
+                            <li><a href="{{url('laptops')}}">Laptops</a></li>
+                            <li><a href="{{url('storage')}}">Storage</a></li>
+                            <li><a href="{{url('software')}}">Softwares</a></li>
                         </ul>
                     </div>
                 </div>

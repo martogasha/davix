@@ -1,6 +1,6 @@
 @include('cPartials.header')
 @if(\Illuminate\Support\Facades\Auth::check())
-<title>{{$user->name}}'s Dashboard</title>
+<title>{{$user->user_name}}'s Dashboard</title>
 @else
 <title>Dashboard</title>
 @endif
@@ -11,7 +11,7 @@
                 <!-- =====  BANNER STRAT  ===== -->
                 <div class="breadcrumb ptb_20">
                     @if(\Illuminate\Support\Facades\Auth::check())
-                    <h1>{{$user->name}}'s Dashboard</h1>
+                    <h1>{{$user->user_name}}'s Dashboard</h1>
                     @else
                         <h1>Dashboard</h1>
                     @endif
@@ -35,7 +35,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         @if(\Illuminate\Support\Facades\Auth::check())
-                                        <h3>{{$user->name}}'s Details</h3>
+                                        <h3>{{$user->user_name}}'s Details</h3>
                                         @else
                                             <h3>Customer Detail</h3>
                                         @endif
@@ -45,19 +45,19 @@
                                                 <input type="hidden" value="{{$user->id}}" name="userId">
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">Name</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="Name" value="{{$user->name}}" name="name" required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="Name" value="{{$user->user_name}}" name="name" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">E-Mail</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="E-Mail" value="{{$user->email}}" name="email"required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="E-Mail" value="{{$user->user_email}}" name="email"required>
                                         </div>
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">Phone Number</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="Phone" value="{{$user->phone}}" name="phone" required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="Phone" value="{{$user->user_phone}}" name="phone" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">Location</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="Location" value="{{$user->location}}" name="location" required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="Location" value="{{$user->user_location}}" name="location" required>
                                         </div>
                                             <div class="form-group">
                                                 <label for="input-email" class="control-label">Password</label>

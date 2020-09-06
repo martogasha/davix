@@ -65,12 +65,14 @@
                     </div>
                 </div>
                 <div class="row">
+                    @if(!empty($searchProducts))
+                    @foreach($searchProducts as $searchProduct)
                     <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
                         <div class="item">
                             <div class="product-thumb clearfix mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product1-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
+                                <div class="image product-imageblock"> <a href="{{url('productDetail',$searchProduct->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$searchProduct->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="{{asset('uploads/product/'.$searchProduct->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
                                 <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
+                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$searchProduct->product_name}}</a></h6>
                                     <div class="rating">
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
@@ -78,393 +80,24 @@
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
                                     </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
+                                    <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$searchProduct->product_price}}</span></span>
                                     <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
                                     <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                                        <form action="{{url('cartOne')}}" method="post">
+                                            @csrf
+                                            <input type="hidden" value="{{$searchProduct->id}}" name="productId">
+                                            <button type="submit" class="btn btn-info">ADD TO CART</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb clearfix mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product2.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product2-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb clearfix mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product3-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb clearfix mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product4.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product4-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb clearfix mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product5.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product5-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product6.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product6-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product7.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product7-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product8.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product8-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product9.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product9-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product10.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product10-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product1-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product2.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product2-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product3-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product4.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product4-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product5.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product5-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-layout  product-grid  col-lg-3 col-md-4 col-xs-6 ">
-                        <div class="item">
-                            <div class="product-thumb  mb_30">
-                                <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="images/product/product6.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> <img src="images/product/product6-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /> </a> </div>
-                                <div class="caption product-detail text-left">
-                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">New LCDScreen and HD Video Recording</a></h6>
-                                    <div class="rating">
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
-                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
-                                    </div>
-                                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span></span>
-                                    <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
-                                    <div class="button-group text-center">
-                                        <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
-                                        <div class="quickview"><a href="#"><span>Quick View</span></a></div>
-                                        <div class="compare"><a href="#"><span>Compare</span></a></div>
-                                        <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    @else
+                        <h4>No Results Found</h4>
+                    @endif
+
                 </div>
                 <div class="pagination-nav text-center mt_50">
                     <ul>
@@ -485,12 +118,12 @@
     <!-- =====  FOOTER END  ===== -->
 </div>
 
-<a id="scrollup">Scroll</a>
-<script src="js/jQuery_v3.1.1.min.js"></script> <script src="js/owl.carousel.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.magnific-popup.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery-ui.js"></script>
+    <a id="scrollup">Scroll</a>
+    <script src="js/jQuery_v3.1.1.min.js"></script> <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-ui.js"></script>
 <script>
     $( function() {
         $( "#slider-range" ).slider({

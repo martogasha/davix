@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('product_name');
             $table->string('product_desc');
-            $table->integer('product_price')->nullable();
+            $table->integer('product_price');
             $table->mediumText('product_image');
             $table->mediumText('product_image1')->nullable();
             $table->mediumText('product_image2')->nullable();
@@ -26,18 +26,6 @@ class CreateProductsTable extends Migration
             $table->string('product_category1')->nullable();
             $table->string('product_category2')->nullable();
             $table->string('product_category3')->nullable();
-            $table->string('product_category4')->nullable();
-            $table->string('product_category5')->nullable();
-            $table->string('product_category6')->nullable();
-            $table->string('product_category7')->nullable();
-            $table->string('product_category8')->nullable();
-            $table->string('product_category9')->nullable();
-            $table->string('product_category10')->nullable();
-
-
-
-            $table->string('product_status')->nullable();
-            $table->string('product_status1')->nullable();
 
             $table->timestamps();
         });

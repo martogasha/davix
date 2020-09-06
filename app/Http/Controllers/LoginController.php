@@ -22,13 +22,13 @@ class LoginController extends Controller
     }
     public function login(Request $request)
     {
-        $user = User::where('email',$request->email)->first();
+        $user = User::where('user_email',$request->email)->first();
 
         if (Auth::attempt([
-            'email' => $request->email,
+            'user_email' => $request->email,
             'password' => $request->password,
         ])) {
-            if ($user->role ==0){
+            if ($user->user_role ==0){
                 return redirect(url('admin'));
             }
             else{
@@ -36,16 +36,26 @@ class LoginController extends Controller
             }
         }
         else{
-            return redirect(url('LoginUser'))->with('error', 'CREDENTIALS DOES NOT MATCH');
+            return redirect()->back()->with('error', 'CREDENTIALS DOES NOT MATCH');
         }
     }
         public function register(Request $request){
+        $user = User::where('user_email',$request->email)->first();
+        $userPhone = User::where('user_phone',$request->phone)->first();
+
+            if (isset($user)){
+            return redirect()->back()->with('error', 'Email Already Used');
+        }
+        elseif(isset($userPhone)){
+            return redirect()->back()->with('error', 'Phone Number Already Used');
+
+        }
             $register = User::create([
-                'name'=>$request->input('name'),
-                'email'=>$request->input('email'),
-                'phone'=>$request->input('phone'),
-                'location'=>$request->input('location'),
-                'role'=> 1,
+                'user_name'=>$request->input('name'),
+                'user_email'=>$request->input('email'),
+                'user_phone'=>$request->input('phone'),
+                'user_location'=>$request->input('location'),
+                'user_role'=> 1,
                 'password' => Hash::make($request['password']),
             ]);
             return redirect(url('Login'))->with('success','Registered Successfully');

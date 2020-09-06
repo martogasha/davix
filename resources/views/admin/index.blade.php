@@ -84,21 +84,24 @@
             </li>
             <li class="dropdown">
                 <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-                    <span class="user-name">Zyan Ferris</span>
-                    <span class="avatar">ZF<span class="status busy"></span></span>
+                    <span class="user-name">{{\Illuminate\Support\Facades\Auth::user()->user_name}}</span>
+                    <span class="avatar"><span class="status busy"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
                     <div class="header-profile-actions">
                         <div class="header-user-profile">
                             <div class="header-user">
-                                <img src="asset/img/user.png" alt="Admin Template" />
+                                <img src="asset/img/user55.jpeg" alt="Admin Template" />
                             </div>
-                            <h5>Zyan Ferris</h5>
+                            <h5>{{\Illuminate\Support\Facades\Auth::user()->user_name}}</h5>
                             <p>Admin</p>
                         </div>
                         <a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
                         <a href="account-settings.html"><i class="icon-settings1"></i> Account Settings</a>
-                        <a href="login.html"><i class="icon-log-out1"></i> Sign Out</a>
+                        <form action="{{route('logout')}}" method="post" id="logout">
+                            @csrf
+                        <a href="javascript:document.getElementById('logout').submit()"><i class="icon-log-out1"></i> Sign Out</a>
+                        </form>
                     </div>
                 </div>
             </li>
@@ -233,6 +236,12 @@
                         Order Details
                     </a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{url('rating')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Product Rating
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -305,7 +314,7 @@
                                         <div class="progress progress-dot">
                                             <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                        <h4>{{\App\Order::all()->unique('user_id')->count()}}</h4>
+                                        <h4>{{\App\Order::where('order_status1','Awaiting Confirmation')->orWhere('order_status1','Order on the Way')->count()}}</h4>
                                     </div>
                                     </a>
                                 </div>
@@ -319,6 +328,18 @@
                                         </div>
                                         <h4>{{\App\Order::where('order_status1','Delivered')->count()}}</h4>
                                     </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-12">
+                                    <a href="{{url('rating')}}">
+                                        <div class="goal-card">
+                                            <h5>Product Rating</h5>
+                                            <p class="percentage"></p>
+                                            <div class="progress progress-dot">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="107" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4>{{\App\Rating::all()->count()}}</h4>
+                                        </div>
                                     </a>
                                 </div>
                             </div>

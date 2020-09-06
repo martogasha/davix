@@ -85,21 +85,24 @@
             </li>
             <li class="dropdown">
                 <a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-                    <span class="user-name">Zyan Ferris</span>
-                    <span class="avatar">ZF<span class="status busy"></span></span>
+                    <span class="user-name">{{\Illuminate\Support\Facades\Auth::user()->user_name}}</span>
+                    <span class="avatar"><span class="status busy"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
                     <div class="header-profile-actions">
                         <div class="header-user-profile">
                             <div class="header-user">
-                                <img src="{{asset('asset/img/user.png')}}" alt="Admin Template" />
+                                <img src="asset/img/user55.jpeg" alt="Admin Template" />
                             </div>
-                            <h5>Zyan Ferris</h5>
+                            <h5>{{\Illuminate\Support\Facades\Auth::user()->user_name}}</h5>
                             <p>Admin</p>
                         </div>
                         <a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
                         <a href="account-settings.html"><i class="icon-settings1"></i> Account Settings</a>
-                        <a href="login.html"><i class="icon-log-out1"></i> Sign Out</a>
+                        <form action="{{route('logout')}}" method="post" id="logout">
+                            @csrf
+                            <a href="javascript:document.getElementById('logout').submit()"><i class="icon-log-out1"></i> Sign Out</a>
+                        </form>
                     </div>
                 </div>
             </li>
@@ -160,6 +163,12 @@
                     <a class="nav-link" href="{{url('orderDetails')}}" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-book-open nav-icon"></i>
                         Order Details
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{url('rating')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Product Rating
                     </a>
                 </li>
             </ul>
@@ -288,9 +297,31 @@
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Product Category:</label>
                     <select class="form-control" name="category" id="exampleFormControlSelect1">
-                        <option value="home">Home</option>
+                        <option value="computer">Computer and Office</option>
+                        <option value="home">Home Appliances and Electronics</option>
                         <option value="phone">Phone</option>
                         <option value="laptop">Laptop</option>
+                        <option value="software">Softwares</option>
+                        <option value="cctv">CCTV and Safety</option>
+                        <option value="networking">Networking and Telecom</option>
+                        <option value="consumer">Consumer Electronics</option>
+                        <option value="storage">Storage</option>
+                        <option value="printer">Printers and Consumables</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Product Brand:</label>
+                    <select class="form-control" name="category1" id="exampleFormControlSelect1">
+                        <option value="hp">HP</option>
+                        <option value="acer">ACER</option>
+                        <option value="sony">SONY</option>
+                        <option value="samsung">SAMSUNG</option>
+                        <option value="lg">LG</option>
+                        <option value="apple">APPLE</option>
+                        <option value="asus">ASUS</option>
+
+
                     </select>
                 </div>
 

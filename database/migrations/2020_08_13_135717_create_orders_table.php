@@ -17,8 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->integer('product_id');
             $table->integer('user_id')->nullable();
-            $table->integer('quantity');
-            $table->string('size')->nullable();
+            $table->integer('order_quantity');
+            $table->string('order_product_size')->nullable();
             $table->string('order_status')->nullable();
             $table->string('order_status1')->nullable();
             $table->timestamps();

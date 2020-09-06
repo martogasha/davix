@@ -13,7 +13,7 @@
                     </ul>
                 </div>
                 <!-- =====  BREADCRUMB END===== -->
-                <form action="{{url('placeOrder')}}" method="post">
+                <form action="{{url('placeOrder')}}" method="post" id="placeOrderForm">
                     @csrf
                     @if(\Illuminate\Support\Facades\Auth::check())
                     <input type="hidden" value="{{$user->id}}" name="userId">
@@ -33,29 +33,31 @@
                                         <br>
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">Name</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="Name" value="{{$user->name}}" name="name" required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="Name" value="{{$user->user_name}}" name="name" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">E-Mail</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="E-Mail" value="{{$user->email}}" name="email"required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="E-Mail" value="{{$user->user_email}}" name="email"required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="input-email" class="control-label">Phone Number</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="Phone" value="{{$user->phone}}" name="phone" required>
+
+                                            <div class="phone-list">
+
+                                                <div class="input-group phone-input">
+						                        <span class="input-group-btn">
+							                    <button type="button" class="btn btn-default dropdown-toggle" aria-expanded="false"><span class="type-text">+254</span></button>
+						                        </span>
+                                                    <input type="text" name="phone" class="form-control" value="{{$user->user_phone}}" placeholder="712345678" />
+                                                </div>
+
+
+                                            </div>
+
                                         </div>
                                         <div class="form-group">
                                             <label for="input-email" class="control-label">Location</label>
-                                            <input type="text" class="form-control" id="input-email" placeholder="Location" value="{{$user->location}}" name="location" required>
+                                            <input type="text" class="form-control" id="input-email" placeholder="Location" value="{{$user->user_location}}" name="location" required>
                                         </div>
-                                        @if(\Illuminate\Support\Facades\Auth::check())
-                                        @else
-                                            <div class="form-group">
-                                                <label for="input-password" class="control-label">Password</label>
-                                                <input type="password" class="form-control" id="input-password" placeholder="Password" value="" name="password" required>
-                                                <p><strong>By filling the details below an account will be created for you.</strong></p>
-                                            </div>
-
-                                        @endif
 
                                 </div>
                             </div>
@@ -124,14 +126,15 @@
                                 <p>Please select the preferred payment method to use on this order.</p>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" checked="checked" name="cash">
+                                        <input type="radio" checked="checked" value="cash" name="cash">
                                         Cash On Delivery </label>
                                 </div>
 
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" checked="checked" name="cash">
+                                        <input type="radio" checked="checked" value="mpesa" name="cash">
                                         Mpesa </label>
+                                    <h5 class="text-danger" id="mpesaId"><b>Please make sure you have the whole amount     (Ksh: {{$totalPrice}}) in your Mpesa account and put in the prompted Mpesa pin after placing order.</b></h5>
                                 </div>
 
                                 <div class="buttons">
@@ -182,6 +185,21 @@
             $('#shipping-new').hide();
         }
     });
+    $('#mpesaId').hide();
+   $('#placeOrderForm input').on('change',function () {
+     $value =  $('input[name=cash]:checked','#placeOrderForm').val();
+     if ($value=='mpesa'){
+         $('#mpesaId').show();
+     }
+     else {
+         if ($value=='cash'){
+             $('#mpesaId').hide();
+
+         }
+     }
+
+   });
+
 </script>
 </body>
 

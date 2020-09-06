@@ -23,10 +23,10 @@ class DashController extends Controller
     }
     public function store(Request $request){
         $editUser = User::find($request->userId);
-        $editUser->name = $request->name;
-        $editUser->email = $request->email;
-        $editUser->phone = $request->phone;
-        $editUser->location = $request->location;
+        $editUser->user_name = $request->name;
+        $editUser->user_email = $request->email;
+        $editUser->user_phone = $request->phone;
+        $editUser->user_location = $request->location;
         $editUser->password = Hash::make($request->password);
         $editUser->save();
 

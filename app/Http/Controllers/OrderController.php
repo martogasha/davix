@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class OrderController extends Controller
 {
     public function index(){
-        if (Auth::user()->role==0) {
+        if (Auth::user()->user_role==0) {
             $orders = Order::where('order_status1', 'Awaiting Confirmation')->orWhere('order_status1', 'Order on the Way')->get()->unique('user_id');
             return view('admin.order', [
                 'orders' => $orders
@@ -25,7 +25,7 @@ class OrderController extends Controller
         foreach ($checks as $check){
 
             $sum = $check->product->product_price;
-            $quant = $check->quantity;
+            $quant = $check->order_quantity;
 
             $total = $sum * $quant;
             $totalSum += $total;
@@ -44,8 +44,8 @@ class OrderController extends Controller
                                 <td><img src="uploads/product/'.$order->product->product_image.'"></td>
                                 <td>'.$order->product->product_name.'</td>
                                 <td>Ksh:'.$order->product->product_price.'</td>
-                                <td>'.$order->quantity.'</td>
-                                <td>Ksh:'.$order->quantity*$order->product->product_price.'</td>
+                                <td>'.$order->order_quantity.'</td>
+                                <td>Ksh:'.$order->order_quantity*$order->product->product_price.'</td>
                                                             <td>'.$totalSum.'</td>
 
                             </tr>

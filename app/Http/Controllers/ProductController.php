@@ -11,7 +11,7 @@ use Image;
 class ProductController extends Controller
 {
     public function index(){
-        if (Auth::user()->role==0) {
+        if (Auth::user()->user_role==0) {
             $products = Product::all();
             return view('admin.list', [
                 'products' => $products
@@ -43,11 +43,16 @@ class ProductController extends Controller
         $pictures->product_desc = $request->input('desc');
         $pictures->product_price = $request->input('price');
         $pictures->product_category = $request->input('category');
+        $pictures->product_category1 = $request->input('category1');
 
         if ($request->image) {
             $file = $request->file('image');
             $extension = $file->getClientOriginalName();
             $filename = time() . '.' . $extension;
+            $resize = Image::make($file->getRealPath());
+            $resize->resize(500, 500, function ($constraint){
+                $constraint->aspectRatio();
+            });
             $file->move('uploads/product/', $filename);
             $pictures->product_image = $filename;
         }
@@ -58,6 +63,20 @@ class ProductController extends Controller
         return redirect()->back()->with('success','Product Added Successfully');
 
     }
+    public function search(Request $request){
+        $search = $request->input('searchProduct');
+        $searchProducts = Product::where('product_name','like',"%$search%")->get();
+        $oldCart = Session::get('cat');
+        $cart = new Cat($oldCart);
+
+        return view('customer.category',[
+            'searchProducts'=>$searchProducts,
+            'products'=>$cart->item,
+            'totalPrice'=>$cart->totalPrice
+
+
+        ]);
+    }
     public function eProduct(Request $request){
         $edit = Product::find($request->prodId);
         if ($request->image) {
@@ -65,7 +84,7 @@ class ProductController extends Controller
             $extension = $file->getClientOriginalName();
             $filename = time() . '.' . $extension;
             $resize = Image::make($file->getRealPath());
-            $resize -> resize(500, 500, function ($constraint){
+            $resize->resize(500, 500, function ($constraint){
                 $constraint->aspectRatio();
             });
             $file->move('uploads/product/', $filename);
@@ -76,6 +95,8 @@ class ProductController extends Controller
         $edit->product_price = $request->input('price');
 
         $edit->product_category = $request->category;
+        $edit->product_category1 = $request->category1;
+
 
 
 
