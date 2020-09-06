@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RatingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Rating.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_26_061854_create_ratings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/asset/img/user55.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/huwawei.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/microsoft.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/techno.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/transend.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1597637900.best-liquer-creae-600x600.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1597637968.3-Bloom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1597639595.ttttvvvv.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1597639656.ttttvvvv.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1597742946.4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598349868.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598415923.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598416518.3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598451519.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598466970.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598467279.4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598790790.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598790821.1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1598974674.2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/rating.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/cctv.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/computers.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/consumerElectronics.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/homeAppliance.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/laptops.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/networking.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/phones.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/printers.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/shop.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/software.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customer/storage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a26843fc-6b07-42a8-8f6f-30130223e10d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a26843fc-6b07-42a8-8f6f-30130223e10d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/davix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/davix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductDetailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductDetailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_13_135423_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_13_135423_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_13_135717_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_13_135717_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/order.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/orderDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/orderDetails.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/Login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/Login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/productDetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/productDetail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/trackOrder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/trackOrder.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,6 +200,7 @@
       <workItem from="1598836390323" duration="2480000" />
       <workItem from="1598971727903" duration="607000" />
       <workItem from="1599132940634" duration="1054000" />
+      <workItem from="1599390596610" duration="679000" />
     </task>
     <servers />
   </component>
