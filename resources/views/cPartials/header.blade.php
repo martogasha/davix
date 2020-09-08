@@ -30,6 +30,7 @@
     <link rel="apple-touch-icon" href="{{asset('images/apple-touch-icon.html')}}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{asset('images/apple-touch-icon-72x72.html')}}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{asset('images/apple-touch-icon-114x114.html')}}">
+
 </head>
 <body>
 <!-- =====  LODER  ===== -->
@@ -133,7 +134,17 @@
                         <ul id="menu" class="nav navbar-nav">
                             <li> <a href="{{url('/')}}">Home</a></li>
                             <li> <a href="{{url('shop')}}">Shop</a></li>
-                            <li> <a href="{{url('cart')}}">Services</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>
+                                <ul class="dropdown-menu">
+                                    <li> <a href="{{url('cameraService')}}">CCTV and Surveillance System</a></li>
+                                    <li> <a href="{{url('NetworkingService')}}">Networking</a></li>
+                                    <li> <a href="{{url('internet')}}">Home and Office Internet</a></li>
+                                    <li> <a href="{{url('dataRecovery')}}">Data Recovery and Backup</a></li>
+                                    <li> <a href="{{url('maintenance')}}">Computer Repair and Maintenance</a></li>
+                                    <li> <a href="{{url('webDesign')}}">Web Design and Development</a></li>
+
+                                </ul>
+                            </li>
                             <li class="dropdown"> <a href="{{url('productDetail')}}">About Us</a>
                             </li>
                             <li> <a href="#">Contacts</a></li>

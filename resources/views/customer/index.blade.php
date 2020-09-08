@@ -106,12 +106,12 @@
                                                         </span>
                                                     </div>
                                                     <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$home->product_price}}</span></span>
+                                                    @if($home->status==1)
                                                     <div class="button-group text-center">
-                                                        <form id="homeForm">
-                                                            <input type="hidden" value="{{$home->id}}" name="productId" id="home">
-                                                            <button type="submit" class="btn btn-info">ADD TO CART</button>
-                                                        </form>
+                                                            <button type="submit" class="btn btn-info">Out of Stock</button>
                                                     </div>
+                                                    @else
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>

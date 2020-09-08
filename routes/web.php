@@ -49,6 +49,13 @@ Route::get('success','CheckoutController@success');
 Route::resource('dashboard','DashController');
 Route::post('search','ProductController@search');
 Route::resource('trackOrder','TrackController');
+Route::resource('internet','InternetController');
+Route::get('cameraService','InternetController@cctv');
+Route::get('maintenance','InternetController@maintenance');
+Route::get('dataRecovery','InternetController@recovery');
+Route::get('webDesign','InternetController@webDesign');
+Route::get('NetworkingService','InternetController@networking');
+
 
 
 
@@ -59,6 +66,8 @@ Route::get('admin/order','OrderController@index');
 Route::get('ajax','OrderController@getOrderDetails');
 Route::resource('stock','ProductController');
 Route::get('deleteProduct/{id}','ProductController@deleteProduct');
+Route::get('status/{id}','ProductController@status');
+
 Route::post('eProduct','ProductController@eProduct');
 Route::get('editProductDetails/{id}','ProductController@editProductDetails');
 Route::post('confirmOrder','OrderController@confirm');

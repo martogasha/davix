@@ -36,7 +36,17 @@ class ProductController extends Controller
 
         ]);
     }
+    public function status($id){
+        $status = Product::find($id);
+        if ($status->status==0){
+            $updateStatus = Product::where('id',$status->id)->update(['status'=>1]);
+        }
+        else{
+            $updateStatus = Product::where('id',$status->id)->update(['status'=>0]);
 
+        }
+        return redirect(url('stock'))->with('success','PRODUCT STATUS UPDATED SUCCESSFULLY');
+    }
     public function store(Request $request){
         $pictures = new Product();
         $pictures->product_name = $request->input('name');

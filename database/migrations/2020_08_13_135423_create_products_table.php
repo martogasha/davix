@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('product_name');
             $table->string('product_desc');
             $table->integer('product_price');
+            $table->integer('status')->default(0);
             $table->mediumText('product_image');
             $table->mediumText('product_image1')->nullable();
             $table->mediumText('product_image2')->nullable();

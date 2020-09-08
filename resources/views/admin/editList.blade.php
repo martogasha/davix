@@ -525,7 +525,15 @@
 
                         </form>
                     </div>
-
+                    @if($product->status==0)
+                    <a href="{{url('status',$product->id)}}"><button class="btn btn-info">
+                            In Stock
+                        </button></a>
+                    @else
+                        <a href="{{url('status',$product->id)}}"><button class="btn btn-danger">
+                                Out of Stock
+                            </button></a>
+                        @endif
                 </div>
                 <!-- Row end -->
             </div>

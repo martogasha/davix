@@ -238,6 +238,8 @@
                                 Delete
                             </button></a>
                         </div>
+
+                    </div>
                     </div>
                     @endforeach
 
@@ -313,6 +315,7 @@
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Product Brand:</label>
                     <select class="form-control" name="category1" id="exampleFormControlSelect1">
+                        <option>Select Brand</option>
                         <option value="hp">HP</option>
                         <option value="acer">ACER</option>
                         <option value="sony">SONY</option>

@@ -39,7 +39,12 @@
                         <hr>
                         <ul class="list-unstyled product_info mtb_20">
                                 <label>Availability:</label>
+                            @if($product->status==0)
                                 <span> In Stock</span></li>
+                            @else
+                                <span class="text-danger"><b>Out of Stock</b></span></li>
+                                @endif
+
                         </ul>
                         <hr>
                         <p class="product-desc mtb_30">{{$product->product_desc}}</p>

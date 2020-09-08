@@ -89,10 +89,20 @@
                         <ul id="menu" class="nav navbar-nav">
                                 <li> <a href="{{url('/')}}">Home</a></li>
                                 <li> <a href="{{url('category')}}">Shop</a></li>
-                                <li> <a href="{{url('cart')}}">Cart</a></li>
-                                <li class="dropdown"> <a href="{{url('productDetail')}}">Product Details</a>
-                                </li>
-                                <li> <a href="{{url('checkout')}}">Checkout</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>
+                                <ul class="dropdown-menu">
+                                    <li> <a href="{{url('cameraService')}}">CCTV and Surveillance System</a></li>
+                                    <li> <a href="{{url('NetworkingService')}}">Networking</a></li>
+                                    <li> <a href="{{url('internet')}}">Home and Office Internet</a></li>
+                                    <li> <a href="{{url('dataRecovery')}}">Data Recovery and Backup</a></li>
+                                    <li> <a href="{{url('maintenance')}}">Computer Repair and Maintenance</a></li>
+                                    <li> <a href="{{url('webDesign')}}">Web Design and Development</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"> <a href="{{url('productDetail')}}">About Us</a>
+                            </li>
+                            <li> <a href="#">Contacts</a></li>
                         </ul>
                     </div>
 
