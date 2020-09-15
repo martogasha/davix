@@ -34,11 +34,7 @@
 </head>
 <body>
 <!-- =====  LODER  ===== -->
-<div class="loder"></div>
 <div class="wrapper">
-
-
-
 
     <!-- =====  HEADER START  ===== -->
     <header id="header">

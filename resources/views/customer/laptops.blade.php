@@ -83,11 +83,12 @@
                                     <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$searchProduct->product_price}}</span></span>
                                     <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
                                     <div class="button-group text-center">
-                                        <form id="laptopForm">
-                                            @csrf
-                                            <input type="hidden" value="{{$searchProduct->id}}" name="productId" id="laptop">
-                                            <button type="submit" class="btn btn-info">ADD TO CART</button>
-                                        </form>
+                                        @if($searchProduct->status==1)
+                                            <div class="button-group text-center">
+                                                <button type="submit" class="btn btn-info">Out of Stock</button>
+                                            </div>
+                                        @else
+                                        @endif
                                     </div>
                                 </div>
                             </div>

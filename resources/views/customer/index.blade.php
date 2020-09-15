@@ -139,6 +139,12 @@
                                                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$phone->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
                                                         <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$phone->product_price}}</span></span>
+                                                        @if($phone->status==1)
+                                                            <div class="button-group text-center">
+                                                                <button type="submit" class="btn btn-info">Out of Stock</button>
+                                                            </div>
+                                                        @else
+                                                        @endif
                                                         <div class="button-group text-center">
                                                             <form id="phoneForm">
                                                                 <input type="hidden" value="{{$phone->id}}" name="productId" id="phone">
@@ -171,6 +177,12 @@
                                                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$laptop->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
                                                         <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$laptop->product_price}}</span></span>
+                                                        @if($laptop->status==1)
+                                                            <div class="button-group text-center">
+                                                                <button type="submit" class="btn btn-info">Out of Stock</button>
+                                                            </div>
+                                                        @else
+                                                        @endif
                                                         <div class="button-group text-center">
                                                             <form class="view" id="laptopForm">
                                                                 <input type="hidden" value="{{$laptop->id}}" name="productId" id="laptop">

@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('home', function () {
-    return view('welcome');
-});
+
 //Mpesa Routes
 Route::get('lipa', 'CheckoutController@lipaNaMpesa');
 
