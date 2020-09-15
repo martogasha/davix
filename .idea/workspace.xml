@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/cctv.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/cctv.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/computers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/computers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/consumerElectronics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/consumerElectronics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/homeAppliance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/homeAppliance.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/laptops.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/laptops.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/phones.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/phones.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/printers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/printers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/software.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/software.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/storage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/storage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +203,7 @@
       <workItem from="1599464302695" duration="99000" />
       <workItem from="1599543035086" duration="11186000" />
       <workItem from="1600189636862" duration="1752000" />
-      <workItem from="1600193336018" duration="781000" />
+      <workItem from="1600193336018" duration="1190000" />
     </task>
     <servers />
   </component>
