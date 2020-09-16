@@ -58,7 +58,7 @@
         <div class="header">
             <div class="container">
                 <nav class="navbar">
-                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="{{asset('images/dlogo.jpg')}}"> </a> </div>
+                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="{{asset('images/icons.png')}}"> </a> </div>
                     <div class="header-right pull-right mtb_50">
                         <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
                         <div class="shopping-icon">

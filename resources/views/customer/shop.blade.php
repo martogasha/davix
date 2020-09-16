@@ -1,5 +1,5 @@
 @include('cPartials.header')
-<title>All Categories</title>
+<title>Icons Computer - All Categories</title>
 
 <div class="filter left-sidebar-widget mb_50">
                     <div class="heading-part mtb_20 ">

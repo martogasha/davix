@@ -514,11 +514,24 @@
                                     <label for="recipient-name" class="col-form-label">Product Brand:</label>
                                     <select class="form-control" name="category1" id="exampleFormControlSelect1">
                                         <option value="{{$product->product_category1}}">{{$product->product_category1}}</option>
-                                        <option value="hp">HP</option>
-                                        <option value="acer">ACER</option>
-                                        <option value="sony">SONY</option>
-                                        <option value="samsung">SAMSUNG</option>
-                                        <option value="lg">LG</option>
+                                        <option value="HP">HP</option>
+                                        <option value="SAMSUNG">SAMSUNG</option>
+                                        <option value="ANDROID">ANDROID</option>
+                                        <option value="ACER">ACER</option>
+                                        <option value="LG">LG</option>
+                                        <option value="APPLE">APPLE</option>
+                                        <option value="TOSHIBA">TOSHIBA</option>
+                                        <option value="ASUS">ASUS</option>
+                                        <option value="DELL">DELL</option>
+                                        <option value="LENOVO">LENOVO</option>
+                                        <option value="MSI">MSI</option>
+                                        <option value="MICROSOFT">MICROSOFT</option>
+                                        <option value="FIJITSU">FUJITSU</option>
+                                        <option value="SHUTTLE">SHUTTLE</option>
+                                        <option value="IBM">IBM</option>
+                                        <option value="GATEWAY">GATEWAY</option>
+                                        <option value="INTEL">INTEL</option>
+                                        <option value="GIGABYTE">GIGABYTE</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-info">Edit</button>

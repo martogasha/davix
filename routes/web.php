@@ -72,6 +72,7 @@ Route::post('confirmOrder','OrderController@confirm');
 Route::get('orderDetails','OrderController@orderDetails');
 Route::resource('rating','RatingController');
 Route::get('getRatings','RatingController@getRatings');
+Route::resource('advert','AdvertController');
 
 
 

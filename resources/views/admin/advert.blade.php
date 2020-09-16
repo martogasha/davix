@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
 
     <!-- Title -->
-    <title>Davix - Stock</title>
+    <title>Davix - Advert</title>
 
 
     <!-- *************
@@ -148,7 +148,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active-page" href="{{url('stock')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="{{url('stock')}}" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-book-open nav-icon"></i>
                         Stock
                     </a>
@@ -171,6 +171,12 @@
                         Product Rating
                     </a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active-page" href="{{url('advert')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Advert
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -186,11 +192,9 @@
         <!-- Page header start -->
         <div class="page-header">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item">Home</li>
-                <li class="breadcrumb-item active">Stock</li>
                 <li>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#customModalTwo">
-                        Add Product
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#advertModal">
+                        Add Advert
                     </button>
                 </li>
             </ol>
@@ -220,28 +224,42 @@
             <div class="baguetteBoxThree gallery">
                 <!-- Row start -->
                 <div class="row gutters">
-                    @foreach($products as $product)
+                    @foreach($adverts as $advert)
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
-                        <a href="{{asset('uploads/product/'.$product->product_image)}}" class="effects">
-                            <img src="{{asset('uploads/product/'.$product->product_image)}}" class="img-fluid" alt="Wafi Admin">
+                        <a href="{{asset('uploads/product/'.$advert->image)}}" class="effects">
+                            <img src="{{asset('uploads/product/'.$advert->image)}}" class="img-fluid" alt="Wafi Admin">
                             <div class="overlay">
                                 <span class="expand">+</span>
                             </div>
                         </a>
-                        <h6>{{$product->product_name}}</h6>
-                        <h4>Ksh:{{$product->product_price}}</h4>
-                        <div class="row">
-                        <a href="{{url('editProductDetails',$product->id)}}"><button class="btn btn-info">
-                            Edit
-                            </button></a>
-                        <a href="{{url('deleteProduct',$product->id)}}"><button class="btn btn-danger">
-                                Delete
-                            </button></a>
-                        </div>
-
+                        <h6>{{$advert->category}}</h6>
                     </div>
+
                     @endforeach
 
+                    <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Reviews</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body" id="ratings">
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <!-- Row end -->
             </div>
@@ -268,10 +286,10 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="customModalTwo" tabindex="-1" role="dialog" aria-labelledby="customModalTwoLabel" aria-hidden="true">
+<div class="modal fade" id="advertModal" tabindex="-1" role="dialog" aria-labelledby="customModalTwoLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form action="{{route('stock.store')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('advert.store')}}" method="post" enctype="multipart/form-data">
                 @csrf
             <div class="modal-header">
                 <h5 class="modal-title" id="customModalTwoLabel">Add Product</h5>
@@ -283,76 +301,13 @@
                     <div class="form-group">
                         <input type="file" name="image">
                     </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Product Name:</label>
-                        <input type="text" class="form-control" name="name" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="message-text" class="col-form-label">Product Description:</label>
-                        <textarea class="form-control" name="desc" id="message-text"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Product Price:</label>
-                        <input type="text" class="form-control" name="price" id="recipient-name">
-                    </div>
                 <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Product Category:</label>
+                    <label for="recipient-name" class="col-form-label">Category:</label>
                     <select class="form-control" name="category" id="exampleFormControlSelect1">
-                        <option value="computer">Computer and Office</option>
-                        <option value="home">Home Appliances and Electronics</option>
-                        <option value="phone">Phone</option>
-                        <option value="laptop">Laptop</option>
-                        <option value="software">Softwares</option>
-                        <option value="cctv">CCTV and Safety</option>
-                        <option value="networking">Networking and Telecom</option>
-                        <option value="consumer">Consumer Electronics</option>
-                        <option value="storage">Storage</option>
-                        <option value="printer">Printers and Consumables</option>
-
+                        <option value="1">Slider(960*580 pixels)</option>
+                        <option value="2">Right Side Bar(300*400 pixels)</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Product Brand:</label>
-                    <select class="form-control" name="category1" id="exampleFormControlSelect1">
-                        <option>Select Brand</option>
-                        <option value="HP">HP</option>
-                        <option value="SAMSUNG">SAMSUNG</option>
-                        <option value="ANDROID">ANDROID</option>
-                        <option value="ACER">ACER</option>
-                        <option value="LG">LG</option>
-                        <option value="APPLE">APPLE</option>
-                        <option value="TOSHIBA">TOSHIBA</option>
-                        <option value="ASUS">ASUS</option>
-                        <option value="DELL">DELL</option>
-                        <option value="LENOVO">LENOVO</option>
-                        <option value="MSI">MSI</option>
-                        <option value="MICROSOFT">MICROSOFT</option>
-                        <option value="FIJITSU">FUJITSU</option>
-                        <option value="SHUTTLE">SHUTTLE</option>
-                        <option value="IBM">IBM</option>
-                        <option value="GATEWAY">GATEWAY</option>
-                        <option value="INTEL">INTEL</option>
-                        <option value="GIGABYTE">GIGABYTE</option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </select>
-                </div>
-
-
-
             </div>
             <div class="modal-footer custom">
 
@@ -459,6 +414,25 @@
 <script src="{{asset('asset/js/main.js')}}"></script>
 
 </body>
+<script>
+    $(document).on('click','.view',function () {
+        $value = $(this).attr('id');
+        $.ajax({
+            type:"get",
+            url:"{{url('getRatings')}}",
+            data:{'rating':$value},
+            success:function (data) {
+                $('#ratings').html(data);
+            },
+            error:function (error) {
+                console.log(error)
+                alert('error')
+
+            }
+
+        });
+    });
+</script>
 
 <!-- Mirrored from bootstrap.gallery/wafi-admin/dashboard-v2/topbar/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jul 2020 08:13:29 GMT -->
 </html>

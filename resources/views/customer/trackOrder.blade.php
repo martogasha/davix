@@ -1,5 +1,5 @@
 @include('cPartials.header')
-<title>Track Order</title>
+<title>Icons Computer - Track Order</title>
 
 <div class="left_banner left-sidebar-widget mb_50 mt_30"> <a href="#"><img src="images/left1.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
             </div>

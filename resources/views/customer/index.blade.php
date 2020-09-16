@@ -1,5 +1,5 @@
     @include('cPartials.header')
-    <title>Davix</title>
+    <title>Icons Computer - Home</title>
 
                     <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="images/left1.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
                     <div class="left-cms left-sidebar-widget mb_50">
@@ -53,14 +53,23 @@
                                 <div class="col-sm-12">
                                     <div class="brand owl-carousel ptb_20">
                                         <div class="item text-center"> <a href="#"><img src="images/brand/hplogo.jpg" alt="Disney" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/huwawei.jpg" alt="Disney" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/techno.jpg" alt="Disney" class="img-responsive" /></a> </div>
                                         <div class="item text-center"> <a href="#"><img src="images/brand/lg.jpg" alt="Harley" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/sony.jpg" alt="Canon" class="img-responsive" /></a> </div>
                                         <div class="item text-center"> <a href="#"><img src="images/brand/samsung.jpg" alt="Dell" class="img-responsive" /></a> </div>
                                         <div class="item text-center"> <a href="#"><img src="images/brand/app.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/transend.jpg" alt="Canon" class="img-responsive" /></a> </div>
                                         <div class="item text-center"> <a href="#"><img src="images/brand/microsoft.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/asus.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/dell.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/lenovo.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/ace.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/fff.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/toshiba.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/android.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/ibm.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/gateway.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/intel.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/gigabyte.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/msi.jpg" alt="Canon" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/shuttle.jpg" alt="Canon" class="img-responsive" /></a> </div>
 
 
                                     </div>

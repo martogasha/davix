@@ -4,11 +4,11 @@
             <div class="col-md-3 footer-block">
                 <div class="content_footercms_right">
                     <div class="footer-contact">
-                        <div class="footer-logo mb_40"> <a href="{{url('/')}}"> <img src="{{asset('images/dlogo.jpg')}}" alt="davix"> </a> </div>
+                        <div class="footer-logo mb_40"> <a href="{{url('/')}}"> <img src="{{asset('images/icons.png')}}" alt="davix"> </a> </div>
                         <ul>
-                            <li>B-14 Collins Street West Victoria 2386</li>
-                            <li>(+123) 456 789 - (+024) 666 888</li>
-                            <li>Contact@yourcompany.com</li>
+                            <li>Icons Computer Shop Located at Kikuyu</li>
+                            <li>0727995279</li>
+                            <li>davixdesignsbg@gmail.com</li>
                         </ul>
                         <div class="social_icon">
                             <ul>
@@ -25,23 +25,23 @@
             <div class="col-md-2 footer-block">
                 <h6 class="footer-title ptb_20">Categories</h6>
                 <ul>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Footwear</a></li>
-                    <li><a href="#">Jewellery</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Computer & Office</a></li>
+                    <li><a href="#">Electronics and Home Appliance</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Phones and Tablets</a></li>
+                    <li><a href="#">CCTV and Safetys</a></li>
+                    <li><a href="#">Laptops</a></li>
                 </ul>
             </div>
             <div class="col-md-2 footer-block">
-                <h6 class="footer-title ptb_20">Information</h6>
+                <h6 class="footer-title ptb_20">Services</h6>
                 <ul>
-                    <li><a href="contact.html">Specials</a></li>
-                    <li><a href="#">New Products</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Our Stores</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">CCTV and Surveillance Systems</a></li>
+                    <li><a href="#">Networking</a></li>
+                    <li><a href="#">Home and Office Internet</a></li>
+                    <li><a href="#">Data Recovery and Backup</a></li>
+                    <li><a href="#">Computer Repair and Maintenance</a></li>
+                    <li><a href="#">Web Design and Development</a></li>
                 </ul>
             </div>
             <div class="col-md-2 footer-block">

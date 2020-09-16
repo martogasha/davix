@@ -7,7 +7,7 @@
 <head>
     <!-- =====  BASIC PAGE NEEDS  ===== -->
     <meta charset="utf-8">
-    <title>Cart</title>
+    <title>Icons Computer - Cart</title>
     <!-- =====  SEO MATE  ===== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edg      e" />
     <meta name="description" content="">
@@ -59,7 +59,7 @@
         <div class="header">
             <div class="container">
                 <nav class="navbar">
-                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="images/dlogo.jpg"> </a> </div>
+                    <div class="navbar-header mtb_20"> <a class="navbar-brand" href="{{url('/')}}"> <img alt="fastrod" src="images/icons.png"> </a> </div>
                     <div class="header-right pull-right mtb_50">
                         <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
                         <div class="shopping-icon">

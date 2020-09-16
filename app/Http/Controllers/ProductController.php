@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Advert;
 use App\Cat;
 use App\Product;
 use Illuminate\Http\Request;
@@ -25,6 +26,7 @@ class ProductController extends Controller
         $homes = Product::where('product_category','home')->get();
         $phones = Product::where('product_category','phone')->get();
         $laptops = Product::where('product_category','laptop')->get();
+        $sliders = Advert::where('category',1)->get();
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
         return view('customer.index',[
@@ -32,7 +34,8 @@ class ProductController extends Controller
             'phones'=>$phones,
             'laptops'=>$laptops,
             'products'=>$cart->item,
-            'totalPrice'=>$cart->totalPrice
+            'totalPrice'=>$cart->totalPrice,
+            'sliders'=>$sliders
 
         ]);
     }
