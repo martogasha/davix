@@ -47,15 +47,13 @@
             <div class="col-md-2 footer-block">
                 <h6 class="footer-title ptb_20">My Account</h6>
                 <ul>
-                    <li><a href="#">Checkout</a></li>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">My Orders</a></li>
-                    <li><a href="#">My Credit Slips</a></li>
-                    <li><a href="#">My Addresses</a></li>
-                    <li><a href="#">My Personal Info</a></li>
+                    <li><a href="{{url('contactUs')}}">Contact Us</a></li>
+                    <li><a href="{{url('about')}}">About Us</a></li>
+                    <li><a href="{{url('trackOrder')}}">My Orders</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
-            <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="{{asset('images/lipaMpesa.jpg')}}" alt="Left Banner" class="img-responsive" /></a> </div>
+            <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="" alt="Lipa na Mpesa" class="img-responsive" /></a> </div>
 
         </div>
     </div>

@@ -53,7 +53,8 @@ Route::get('maintenance','InternetController@maintenance');
 Route::get('dataRecovery','InternetController@recovery');
 Route::get('webDesign','InternetController@webDesign');
 Route::get('NetworkingService','InternetController@networking');
-
+Route::resource('about','AboutController');
+Route::get('contactUs','AboutController@contact');
 
 
 
@@ -74,6 +75,7 @@ Route::resource('rating','RatingController');
 Route::get('getRatings','RatingController@getRatings');
 Route::resource('advert','AdvertController');
 
+Route::view('test','test');
 
 
 

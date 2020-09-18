@@ -141,9 +141,9 @@
 
                                 </ul>
                             </li>
-                            <li class="dropdown"> <a href="{{url('productDetail')}}">About Us</a>
+                            <li class="dropdown"> <a href="{{url('about')}}">About Us</a>
                             </li>
-                            <li> <a href="#">Contacts</a></li>
+                            <li> <a href="{{url('contactUs')}}">Contacts</a></li>
                         </ul>
                     </div>
 

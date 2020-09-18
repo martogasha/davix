@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Safaricom\Mpesa\Mpesa;
 use Session;
 
-class CheckoutController extends Controller
+class   CheckoutController extends Controller
 {
     public function index(){
         $oldCart = Session::get('cat');
