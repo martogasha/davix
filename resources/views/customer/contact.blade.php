@@ -1,5 +1,5 @@
 @include('cPartials.header')
-<title>About Us</title>
+<title>Contact Us</title>
 </div>
 <div class="col-sm-8 col-md-8 col-lg-9 mtb_30">
     <!-- contact  -->
@@ -7,15 +7,13 @@
         <div class="col-md-4 col-xs-12 contact">
             <div class="location mb_50">
                 <h5 class="capitalize mb_20">Our Location</h5>
-                <div class="address">Office address <br>
-                    124,Lorem Ipsum has been<br>
-                    text ever since the 1500</div>
-                <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+91-9987-654-321</div>
-            </div>
-            <div class="Hello mb_50">
-                <h5 class="capitalize mb_20">Say Hello</h5>
-                <div class="address">simply dummy text of the printing and typesetting industry.</div>
+                <div class="address">Office Headquarter <br>
+                    349 KIKUYU<br>
+                    </div>
+                <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+254 727 995 279<br></div>
+                <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+254 734 421 552<br></div>
                 <div class="email mt_10"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@yourdomailname.com" target="_top">info@yourdomailname.com</a></div>
+
             </div>
         </div>
         <div class="col-md-8 col-xs-12 contact-form mb_50">

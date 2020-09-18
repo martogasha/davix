@@ -22,66 +22,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <!-- Start Single Service -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-service">
-                            <div class="part-1">
-                                <h3 class="title">Free Computer Diagnostic</h3>
-                            </div>
-                            <div class="part-2">
-                                <p class="description">Xping technicians are well versed in providing computer diagnostic services that identify the root of the problems you’re experiencing.Just bring your computer in and we will take care of the rest..</p>
-                                <a href="#"><i class=""></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-service">
-                            <div class="part-1">
-                                <h3 class="title">
-                                    Remote Support
-                                </h3>
-                            </div>
-                            <div class="part-2">
-                                <p class="description">We provide fast and convenient support through a remote support session. You don’t have to leave your home or office to have your computer fixed.</p>
-                                <a href="#"><i class=""></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="row">
-                    <!-- Start Single Service -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-service">
-                            <div class="part-1">
-                                <h3 class="title">
-                                    Operating Systems
-                                </h3>
-                            </div>
-                            <div class="part-2">
-                                <p class="description">Xping technicians are well versed in providing computer diagnostic services that identify the root of the problems you’re experiencing.Just bring your computer in and we will take care of the rest..</p>
-                                <a href="#"><i class=""></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-service">
-                            <div class="part-1">
-                                <h3 class="title">
-                                    Virus Removal
-                                </h3>
-                            </div>
-                            <div class="part-2">
-                                <p class="description">We provide fast and convenient support through a remote support session. You don’t have to leave your home or office to have your computer fixed.</p>
-                                <a href="#"><i class=""></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+                <p class="description">
+                <p>WE SERVICE ALL KINDS OF COMPUTERS</p>
+                    <br>
+                    Our computer repair services include desktop and laptop computers of all types and brands, particularly PC type computers. We can also repair/replace your laptop screen or backlighting issue depending upon your computer make and model. Your laptop computer keyboard replacement is also possible, once again, depending upon make and model. Having difficulties with your printer(s)? We provide printer troubleshooting and printer setup.
+                </p>
+                <br>
+                WE'LL BRING YOUR COMPUTERS UP TO SPEED
+                <br>
+                <br>
+                Computer running slowly? This can be absolutely agonizing. You, or your staff members can go crazy waiting for programs to process, documents to print; the list is endless. We provide desktop and laptop tune-ups to get top PC performance at a very reasonable price. Our computer maintenance programs will save both time and money and keep your computers running smoothly.Having computer virus issues? We can scan, detect and remove viruses for you. We can also set up a virus protection program to block viruses infections.
+                <br>
+                <br>
+                <button class="btn btn-info">Get Quote</button>
 
             </div>
         </section>

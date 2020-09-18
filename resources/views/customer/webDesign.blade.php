@@ -20,7 +20,9 @@
                         <div class="header-section">
                             <h2 class="title">Web Design and <span>Development</span></h2>
                         </div>
-                        <p>We design beautiful, modern websites at an affordable price. Get your business visible online today. We help businesses grow, build enduring relationships with their customers thru Web design. secure web hosting. super fast web hosting. 24/7 technical support. Scalable Cloud Hosting.</p>
+                        <p>
+                            Client-focused, customer-centric, creating website solutions that deliver tangible business results, Appnovation's web developers helps brands the ever-changing digital landscape.
+                        </p>
                         <br>
                         <button class="btn btn-info">Get Quote</button>
 

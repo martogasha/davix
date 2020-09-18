@@ -23,9 +23,16 @@ class ProductController extends Controller
         }
     }
     public function home(){
-        $homes = Product::where('product_category','home')->get();
-        $phones = Product::where('product_category','phone')->get();
+        $homes = Product::where('product_category','computer')->get();
+        $phones = Product::where('product_category','networking')->get();
         $laptops = Product::where('product_category','laptop')->get();
+        $offices = Product::where('product_category','office')->get();
+        $toners = Product::where('product_category','toner')->get();
+        $projectors = Product::where('product_category','projector')->get();
+        $printers = Product::where('product_category','printer')->get();
+        $cctvs = Product::where('product_category','cctv')->get();
+        $hardDisks = Product::where('product_category','hardDisk')->get();
+
         $sliders = Advert::where('category',1)->get();
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
@@ -33,6 +40,12 @@ class ProductController extends Controller
             'homes'=>$homes,
             'phones'=>$phones,
             'laptops'=>$laptops,
+            'offices'=>$offices,
+            'toners'=>$toners,
+            'projectors'=>$projectors,
+            'cctvs'=>$cctvs,
+            'hardDisks'=>$hardDisks,
+            'printers'=>$printers,
             'products'=>$cart->item,
             'totalPrice'=>$cart->totalPrice,
             'sliders'=>$sliders

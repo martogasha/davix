@@ -7,8 +7,9 @@
                         <div class="footer-logo mb_40"> <a href="{{url('/')}}"> <img src="{{asset('images/icons.png')}}" alt="davix"> </a> </div>
                         <ul>
                             <li>Icons Computer Shop Located at Kikuyu</li>
-                            <li>0727995279</li>
-                            <li>davixdesignsbg@gmail.com</li>
+                            <li>+254 727 995 279</li>
+                            <li>+254 734 421 552</li>
+                            <li>info@iconsTechnologies.com</li>
                         </ul>
                         <div class="social_icon">
                             <ul>

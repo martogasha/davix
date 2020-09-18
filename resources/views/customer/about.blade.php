@@ -11,8 +11,9 @@
                             <div class="about-heading-wrap">
                                 <h2 class="about-heading mb_20 mt_40 ptb_10">ABOUT US</h2>
                             </div>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
-                                of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a  Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            <p>
+                                Icons Computer  Technologies Store is a leading e-retailer  committed to becoming the most loved and trusted store for all computers and IT products by providing a great shopping experience, rapid delivery, tech customer service and provide the best warranty support.
+                            </p>
                         </div>
 
                     </div>
@@ -24,8 +25,9 @@
                             <div class="about-heading-wrap">
                                 <h2 class="about-heading mb_20 mt_40 ptb_10">OUR MISSION</h2>
                             </div>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
-                                of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a  Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            <p>
+                                To be a successful global information technology company trusted by its customers for service excellence, caring for its employees and collaborating with our customers to deliver innovative and value driven ICT products and services.
+                            </p>
                         </div>
 
                     </div>
@@ -34,44 +36,18 @@
                 <!-- =====  product ===== -->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="heading-part mb_20 mt_40">
-                            <h2 class="main_title">What We Do?</h2>
+                        <div class="about-text">
+                            <div class="about-heading-wrap">
+                                <h2 class="about-heading mb_20 mt_40 ptb_10">WHAT WE DO</h2>
+                            </div>
+                            <p>
+                                Devices Technology Store is a leading  e-retailer committed to becoming the most loved and trusted technology store in Kenya. We have a wide variety of electronic products ranging from computers, printers, ink and toners, storage devices, network accessories and we have the most affordable prices.
+                            </p>
                         </div>
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default pull-left">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. CCTV INSTALLATION</a> </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in">
-                                    <div class="panel-body">
-                                        <p>HTML is a computer language devised to allow website creation. These websites can then be viewed by anyone else connected to the Internet. It is relatively easy to learn, with the basics being accessible.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default pull-left">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. COMPUTER REPAIRS</a> </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. When I discovered Bootstrap a few years ago, responsive design was still gaining in popularity, addition to HTML, CSS and JS.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default pull-left">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3.INTERNET INSTALLATION</a> </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.CSS handles the look and feel part of a web page. Using CSS.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
+                <br>
                 <!-- =====  end  ===== -->
 
                 <!--Team Carousel -->

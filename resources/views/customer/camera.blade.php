@@ -22,8 +22,10 @@
                         </div>
                         <p class="description">
 
-                            Get Real time and Playback on your Phone /Laptop While Away
-                            .</p>
+                            Wouldn’t it be great to be able to keep an eye on your business/Home even when on the go, wherever you go? With our advanced Internet Protocol CCTV solutions, not only can you do this, but you can also keep a lid on employee theft and misdemeanors, deter crime from external threats, and inspire confidence and trust with your clients.
+                            Networking
+                            Our goal at Icons Tec is to ensure your network services stand up to your business needs and are not negatively affecting your bottom line. Our IT professionals know how to streamline intercompany networking and increase productivity by optimizing connectivity and permissions.
+                        </p>
                         <br>
                         <button class="btn btn-info">Get Quote</button>
                     </div>
