@@ -47,6 +47,10 @@
                             <div class="item"><a href="{{url('phones')}}"><img src="images/repair.JPG" alt="Main Banner" class="img-responsive" /></a></div>
                             <div class="item"><a href="{{url('phones')}}"><img src="images/sale.jpg" alt="Main Banner" class="img-responsive" /></a></div>
                             <div class="item"><a href="{{url('phones')}}"><img src="images/screen.jpg" alt="Main Banner" class="img-responsive" /></a></div>
+                            <div class="item"><a href="{{url('phones')}}"><img src="images/ram.JPG" alt="Main Banner" class="img-responsive" /></a></div>
+                            <div class="item"><a href="{{url('phones')}}"><img src="images/keyboard.JPG" alt="Main Banner" class="img-responsive" /></a></div>
+                            <div class="item"><a href="{{url('phones')}}"><img src="images/ssd.JPG" alt="Main Banner" class="img-responsive" /></a></div>
+
                         </div>
                     </div>
                     <div id="brand_carouse" class="ptb_30 text-center">
