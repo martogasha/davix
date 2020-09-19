@@ -2049,9 +2049,6 @@ blockquote {
 .social li a i {
 	margin: 12px;
 }
-.team-detail .team-item-img {
-	filter: grayscale(100%);
-}
 .team-detail:hover .team-item-img {
 	filter: grayscale(0%);
 }

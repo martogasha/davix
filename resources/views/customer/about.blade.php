@@ -58,47 +58,20 @@
                 <div class="team_grid box">
                     <div class="team3col  owl-carousel">
                         <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/tm1.jpg" alt="" /> </div>
-                            <div class="team-designation mt_20">php Developer</div>
-                            <h4 class="team-title  mtb_10">joseph Lui </h4>
-                            <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset  Rem ipsum dolor s..</p>
+                            <div class="team-item-img"> <img src="images/team.jpeg" alt="" /> </div>
+                            <div class="team-designation mt_20">Marketing Manager</div>
+                            <h4 class="team-title  mtb_10">David Karanja </h4>
                             <br>
                             <button class="btn btn-info">0712345678</button>
 
                         </div>
                         <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/tm2.jpg" alt="" /> </div>
-                            <div class="team-designation mt_20">php Developer</div>
-                            <h4 class="team-title  mtb_10">joseph Lui </h4>
-                            <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset  Rem ipsum dolor s..</p>
+                            <div class="team-item-img"> <img src="images/tm.jpg" alt="" /> </div>
+                            <div class="team-designation mt_20">Support & Sales</div>
+                            <h4 class="team-title  mtb_10">Mwaura karanja </h4>
                             <br>
                             <button class="btn btn-info">0712345678</button>
 
-                        </div>
-                        <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/tm3.jpg" alt="" /> </div>
-                            <div class="team-designation mt_20">php Developer</div>
-                            <h4 class="team-title  mtb_10">joseph Lui </h4>
-                            <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset  Rem ipsum dolor s..</p>
-                            <br>
-                            <button class="btn btn-info">0712345678</button>
-
-                        </div>
-                        <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/tm4.jpg" alt="" /> </div>
-                            <div class="team-designation mt_20">php Developer</div>
-                            <h4 class="team-title  mtb_10">joseph Lui </h4>
-                            <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset  Rem ipsum dolor s..</p>
-                            <br>
-                            <button class="btn btn-info">0712345678</button>
-                        </div>
-                        <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/tm5.jpg" alt="" /> </div>
-                            <div class="team-designation mt_20">php Developer</div>
-                            <h4 class="team-title  mtb_10">joseph Lui </h4>
-                            <p>Lorem ipsum dolor sit amet, sea in odio erat, volumu Clita prodesset  Rem ipsum dolor s..</p>
-                            <br>
-                            <button class="btn btn-info">0712345678</button>
                         </div>
                     </div>
 
