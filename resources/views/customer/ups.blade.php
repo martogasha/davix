@@ -1,5 +1,5 @@
 @include('cPartials.header')
-<title>Phones and Tablets</title>
+<title>Ups and Backups</title>
 
 <div class="filter left-sidebar-widget mb_50">
                     <div class="heading-part mtb_20 ">

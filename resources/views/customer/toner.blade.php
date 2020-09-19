@@ -1,5 +1,5 @@
 @include('cPartials.header')
-<title>Consumer Electronics</title>
+<title>Toner Cartridges and Inks</title>
 
 <div class="filter left-sidebar-widget mb_50">
                     <div class="heading-part mtb_20 ">

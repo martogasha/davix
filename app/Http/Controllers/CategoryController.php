@@ -57,21 +57,31 @@ class CategoryController extends Controller
             'totalPrice'=>$cart->totalPrice
         ]);
     }
-    public function consumer(){
-        $searchProducts = Product::where('product_category','consumer')->get();
+    public function office(){
+        $searchProducts = Product::where('product_category','office')->get();
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
-        return view('customer.consumerElectronics',[
+        return view('customer.office',[
             'searchProducts'=>$searchProducts,
             'products'=>$cart->item,
             'totalPrice'=>$cart->totalPrice
         ]);
     }
-    public function phones(){
-        $searchProducts = Product::where('product_category','phone')->get();
+    public function toner(){
+        $searchProducts = Product::where('product_category','toner')->get();
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
-        return view('customer.phones',[
+        return view('customer.toner',[
+            'searchProducts'=>$searchProducts,
+            'products'=>$cart->item,
+            'totalPrice'=>$cart->totalPrice
+        ]);
+    }
+    public function projector(){
+        $searchProducts = Product::where('product_category','projector')->get();
+        $oldCart = Session::get('cat');
+        $cart = new Cat($oldCart);
+        return view('customer.projector',[
             'searchProducts'=>$searchProducts,
             'products'=>$cart->item,
             'totalPrice'=>$cart->totalPrice
@@ -122,6 +132,16 @@ class CategoryController extends Controller
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
         return view('customer.software',[
+            'searchProducts'=>$searchProducts,
+            'products'=>$cart->item,
+            'totalPrice'=>$cart->totalPrice
+        ]);
+    }
+    public function ups(){
+        $searchProducts = Product::where('product_category','ups')->get();
+        $oldCart = Session::get('cat');
+        $cart = new Cat($oldCart);
+        return view('customer.ups',[
             'searchProducts'=>$searchProducts,
             'products'=>$cart->item,
             'totalPrice'=>$cart->totalPrice

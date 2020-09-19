@@ -163,16 +163,17 @@
                         <div id="category-menu-responsive" class="navbar collapse " aria-expanded="true" style="" role="button">
                             <div class="nav-responsive">
                                 <ul class="nav  main-navigation collapse in">
-                                    <li><a href="{{url('computers')}}">Computer & Office</a></li>
-                                    <li><a href="{{url('electronics')}}">Electronics and Home Appliance</a></li>
-                                    <li><a href="{{url('networking')}}">Networking and Telecom</a></li>
-                                    <li><a href="{{url('consumer')}}">Consumer Electronics</a></li>
-                                    <li><a href="{{url('phones')}}">Phones and Tablets</a></li>
-                                    <li><a href="{{url('printers')}}">Printers and Consumables</a></li>
-                                    <li><a href="{{url('cctv')}}">CCTV and Safety</a></li>
+                                    <li><a href="{{url('computers')}}">Computer Accessories</a></li>
+                                    <li><a href="{{url('networking')}}">Networking</a></li>
+                                    <li><a href="{{url('office')}}">Office tools and stationery</a></li>
+                                    <li><a href="{{url('toner')}}">Toner cartridges/inks</a></li>
+                                    <li><a href="{{url('projector')}}">Projectors</a> </li>
+                                    <li><a href="{{url('printers')}}">Printers</a></li>
+                                    <li><a href="{{url('cctv')}}">CCTV Systems</a></li>
                                     <li><a href="{{url('laptops')}}">Laptops</a></li>
-                                    <li><a href="{{url('storage')}}">Storage</a></li>
+                                    <li><a href="{{url('storage')}}">Hard disks</a></li>
                                     <li><a href="{{url('software')}}">Softwares</a></li>
+                                    <li><a href="{{url('ups')}}">UPS Backups</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -204,7 +205,7 @@
                             <li><a href="{{url('computers')}}">Computer Accessories</a></li>
                             <li><a href="{{url('networking')}}">Networking</a></li>
                             <li><a href="{{url('office')}}">Office tools and stationery</a></li>
-                            <li><a href="{{url('phones')}}">Toner cartridges/inks</a></li>
+                            <li><a href="{{url('toner')}}">Toner cartridges/inks</a></li>
                             <li><a href="{{url('projector')}}">Projectors</a> </li>
                             <li><a href="{{url('printers')}}">Printers</a></li>
                             <li><a href="{{url('cctv')}}">CCTV Systems</a></li>

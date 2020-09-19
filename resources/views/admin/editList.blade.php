@@ -498,16 +498,17 @@
                                 <label for="recipient-name" class="col-form-label">Product Category:</label>
                                 <select class="form-control" name="category" id="exampleFormControlSelect1">
                                     <option value="{{$product->product_category}}">{{$product->product_category}}</option>
-                                    <option value="computer">Computer and Office</option>
-                                    <option value="home">Home Appliances and Electronics</option>
-                                    <option value="phone">Phone</option>
+                                    <option value="computer">Computer Accessories</option>
+                                    <option value="networking">Networking</option>
+                                    <option value="office">Office Tools and Stationery</option>
+                                    <option value="toner">Toner and cartridges/inks</option>
+                                    <option value="projector">Projectors</option>
+                                    <option value="printer">Printers</option>
+                                    <option value="cctv">CCTV Systems</option>
                                     <option value="laptop">Laptop</option>
+                                    <option value="hardDisk">Hard Disks</option>
                                     <option value="software">Softwares</option>
-                                    <option value="cctv">CCTV and Safety</option>
-                                    <option value="networking">Networking and Telecom</option>
-                                    <option value="consumer">Consumer Electronics</option>
-                                    <option value="storage">Storage</option>
-                                    <option value="printer">Printers and Consumables</option>
+                                    <option value="ups">UPS Backups</option>
                                 </select>
                             </div>
                                 <div class="form-group">
