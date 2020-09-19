@@ -60,7 +60,6 @@ Route::get('contactUs','AboutController@contact');
 
 
 
-
 //admin Routes
 Route::view('admin','admin.index');
 Route::get('admin/order','OrderController@index');

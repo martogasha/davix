@@ -181,10 +181,9 @@
                     <div class="col-sm-8 col-md-8 col-lg-9">
                         <ul class="header-bottom-right">
                             <li class="offers owl-carousel">
-                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Daily Offers - <span>Every Hour UpTo 80% OFF </span></div>
-                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Daily Offers - <span>Every Hour UpTo 80% OFF </span></div>
-                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Daily Offers - <span>Every Hour UpTo 80% OFF </span></div>
-                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Contacts - <span>0712345678 </span></div>
+                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Opening Hours - <span>Monday - Saturday(8am - 7pm) </span></div>
+                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Contacts - <span>0734 421 552 or 0727995279</span></div>
+                                <div class="item"><i class="fa fa-circle" aria-hidden="true"></i>Daily Offers - <span>Every Day UpTo 40% OFF </span></div>
                             </li>
                         </ul>
                     </div>
