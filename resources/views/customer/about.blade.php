@@ -9,7 +9,7 @@
                     <div class="col-md-12">
                         <div class="about-text">
                             <div class="about-heading-wrap">
-                                <h2 class="about-heading mb_20 mt_40 ptb_10">ABOUT US</h2>
+                                <h2><strong>ABOUT US</strong></h2>
                             </div>
                             <p>
                                 Icons Computer  Technologies Store is a leading e-retailer  committed to becoming the most loved and trusted store for all computers and IT products by providing a great shopping experience, rapid delivery, tech customer service and provide the best warranty support.
@@ -23,7 +23,7 @@
                     <div class="col-md-12">
                         <div class="about-text">
                             <div class="about-heading-wrap">
-                                <h2 class="about-heading mb_20 mt_40 ptb_10">OUR MISSION</h2>
+                                <h2><strong>OUR MISSION</strong></h2>
                             </div>
                             <p>
                                 To be a successful global information technology company trusted by its customers for service excellence, caring for its employees and collaborating with our customers to deliver innovative and value driven ICT products and services.
@@ -38,7 +38,7 @@
                     <div class="col-md-12">
                         <div class="about-text">
                             <div class="about-heading-wrap">
-                                <h2 class="about-heading mb_20 mt_40 ptb_10">WHAT WE DO</h2>
+                                <h2><strong>WHAT WE DO</strong></h2>
                             </div>
                             <p>
                                 Devices Technology Store is a leading  e-retailer committed to becoming the most loved and trusted technology store in Kenya. We have a wide variety of electronic products ranging from computers, printers, ink and toners, storage devices, network accessories and we have the most affordable prices.

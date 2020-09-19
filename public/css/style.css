@@ -2018,13 +2018,15 @@ blockquote {
 .about-heading {
 	text-transform: uppercase;
 	font-weight: 700;
+	border-bottom: 2px solid #000;
 	display: inline-block;
 }
 .about-heading span {
 	font-weight: 300;
 }
 .about-text > p::first-letter {
-
+	font-size: 18px;
+	color: #000;
 }
 /* ----------------------------------------------
 	3.2.11 Team
