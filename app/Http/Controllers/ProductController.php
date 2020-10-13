@@ -23,10 +23,9 @@ class ProductController extends Controller
         }
     }
     public function home(){
-        $homes = Product::where('product_category','computer')->get();
-        $phones = Product::where('product_category','networking')->get();
-        $laptops = Product::where('product_category','laptop')->get();
-        $offices = Product::where('product_category','office')->get();
+        $homes = Product::all();
+        $computers = Product::where('product_category','computer')->get();
+        $offices = Product::where('product_category','networking')->get();
         $toners = Product::where('product_category','toner')->get();
         $projectors = Product::where('product_category','projector')->get();
         $printers = Product::where('product_category','printer')->get();
@@ -38,8 +37,7 @@ class ProductController extends Controller
         $cart = new Cat($oldCart);
         return view('customer.index',[
             'homes'=>$homes,
-            'phones'=>$phones,
-            'laptops'=>$laptops,
+            'computers'=>$computers,
             'offices'=>$offices,
             'toners'=>$toners,
             'projectors'=>$projectors,

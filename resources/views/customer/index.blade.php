@@ -94,7 +94,7 @@
                     <!-- =====  PRODUCT TAB  ===== -->
                     <div id="product-tab" class="mt_40">
                         <div class="heading-part mb_20 ">
-                            <a href="{{url('electronics')}}"> <h2 class="main_title">Best Selling Products</h2></a>
+                            <a href="{{url('shop')}}"> <h2 class="main_title">Best Selling Products</h2></a>
                         </div>
                         <div class="tab-content clearfix box">
                             <div class="tab-pane active" id="nArrivals">
@@ -143,21 +143,21 @@
 
                     <div id="product-tab" class="mt_40">
                         <div class="heading-part mb_20 ">
-                            <a href="{{url('laptops')}}"> <h2 class="main_title">Computers Accessories</h2></a>
+                            <a href="{{url('computers')}}"> <h2 class="main_title">Computers Accessories</h2></a>
                         </div>
                         <div class="tab-content clearfix box">
                             <div class="tab-pane active" id="nArrivals">
                                 <div class="nArrivals owl-carousel">
-                                    @foreach($laptops as $laptop)
+                                    @foreach($computers as $computer)
                                         <div class="product-grid">
                                             <div class="item">
                                                 <div class="product-thumb">
-                                                    <div class="image product-imageblock"> <a href="{{url('productDetail',$laptop->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$laptop->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$laptop->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                                                    <div class="image product-imageblock"> <a href="{{url('productDetail',$computer->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$computer->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$computer->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
                                                     <div class="caption product-detail text-left">
-                                                        <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$laptop->product_name}}</a></h6>
+                                                        <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$computer->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
-                                                        <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$laptop->product_price}}</span></span>
-                                                        @if($laptop->status==1)
+                                                        <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$computer->product_price}}</span></span>
+                                                        @if($computer->status==1)
                                                             <div class="button-group text-center">
                                                                 <button type="submit" class="btn btn-info">Out of Stock</button>
                                                             </div>
@@ -165,7 +165,7 @@
                                                         @endif
                                                         <div class="button-group text-center">
                                                             <form class="view" id="laptopForm">
-                                                                <input type="hidden" value="{{$laptop->id}}" name="productId" id="laptop">
+                                                                <input type="hidden" value="{{$computer->id}}" name="productId" id="laptop">
                                                             <button type="submit" class="btn btn-info">ADD TO CART</button>
                                                             </form>
                                                         </div>
@@ -181,21 +181,21 @@
                         </div>
                     <div id="product-tab" class="mt_40">
                         <div class="heading-part mb_20 ">
-                            <a href="{{url('laptops')}}"> <h2 class="main_title">Network Devices</h2></a>
+                            <a href="{{url('networking')}}"> <h2 class="main_title">Network Devices</h2></a>
                         </div>
                         <div class="tab-content clearfix box">
                             <div class="tab-pane active" id="nArrivals">
                                 <div class="nArrivals owl-carousel">
-                                    @foreach($laptops as $laptop)
+                                    @foreach($offices as $office)
                                         <div class="product-grid">
                                             <div class="item">
                                                 <div class="product-thumb">
-                                                    <div class="image product-imageblock"> <a href="{{url('productDetail',$laptop->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$laptop->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$laptop->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                                                    <div class="image product-imageblock"> <a href="{{url('productDetail',$office->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$office->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$office->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
                                                     <div class="caption product-detail text-left">
-                                                        <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$laptop->product_name}}</a></h6>
+                                                        <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$office->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
-                                                        <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$laptop->product_price}}</span></span>
-                                                        @if($laptop->status==1)
+                                                        <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$office->product_price}}</span></span>
+                                                        @if($office->status==1)
                                                             <div class="button-group text-center">
                                                                 <button type="submit" class="btn btn-info">Out of Stock</button>
                                                             </div>
@@ -203,7 +203,7 @@
                                                         @endif
                                                         <div class="button-group text-center">
                                                             <form class="view" id="laptopForm">
-                                                                <input type="hidden" value="{{$laptop->id}}" name="productId" id="laptop">
+                                                                <input type="hidden" value="{{$office->id}}" name="productId" id="laptop">
                                                                 <button type="submit" class="btn btn-info">ADD TO CART</button>
                                                             </form>
                                                         </div>
@@ -219,21 +219,21 @@
                     </div>
                     <div id="product-tab" class="mt_40">
                         <div class="heading-part mb_20 ">
-                            <a href="{{url('laptops')}}"> <h2 class="main_title">CCTV Systems</h2></a>
+                            <a href="{{url('cctv')}}"> <h2 class="main_title">CCTV Systems</h2></a>
                         </div>
                         <div class="tab-content clearfix box">
                             <div class="tab-pane active" id="nArrivals">
                                 <div class="nArrivals owl-carousel">
-                                    @foreach($laptops as $laptop)
+                                    @foreach($cctvs as $cctv)
                                         <div class="product-grid">
                                             <div class="item">
                                                 <div class="product-thumb">
-                                                    <div class="image product-imageblock"> <a href="{{url('productDetail',$laptop->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$laptop->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$laptop->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                                                    <div class="image product-imageblock"> <a href="{{url('productDetail',$cctv->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$cctv->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$cctv->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
                                                     <div class="caption product-detail text-left">
-                                                        <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$laptop->product_name}}</a></h6>
+                                                        <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$cctv->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
-                                                        <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$laptop->product_price}}</span></span>
-                                                        @if($laptop->status==1)
+                                                        <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$cctv->product_price}}</span></span>
+                                                        @if($cctv->status==1)
                                                             <div class="button-group text-center">
                                                                 <button type="submit" class="btn btn-info">Out of Stock</button>
                                                             </div>
@@ -241,7 +241,7 @@
                                                         @endif
                                                         <div class="button-group text-center">
                                                             <form class="view" id="laptopForm">
-                                                                <input type="hidden" value="{{$laptop->id}}" name="productId" id="laptop">
+                                                                <input type="hidden" value="{{$cctv->id}}" name="productId" id="laptop">
                                                                 <button type="submit" class="btn btn-info">ADD TO CART</button>
                                                             </form>
                                                         </div>
