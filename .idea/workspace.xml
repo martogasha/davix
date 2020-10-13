@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/team.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/coursehero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1602567486.4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customer/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +156,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,15 +167,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/customer" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/resources/views/customer" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/public/images/brand" />
       <recent name="$PROJECT_DIR$/public/asset/img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/customer" />
     </key>
   </component>
   <component name="RunManager">
@@ -210,7 +212,14 @@
       <workItem from="1600189636862" duration="1752000" />
       <workItem from="1600193336018" duration="1885000" />
       <workItem from="1600246136415" duration="19760000" />
-      <workItem from="1600494591143" duration="6739000" />
+      <workItem from="1600494591143" duration="7603000" />
+      <workItem from="1600843677195" duration="27000" />
+      <workItem from="1600977856257" duration="3070000" />
+      <workItem from="1601008443071" duration="1770000" />
+      <workItem from="1601622143444" duration="27000" />
+      <workItem from="1602511361586" duration="2027000" />
+      <workItem from="1602564306745" duration="608000" />
+      <workItem from="1602573513859" duration="551000" />
     </task>
     <servers />
   </component>
@@ -234,10 +243,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="312" width="523" height="274" key="ComposerInitDialogKey/0.27.1366.741@0.27.1366.741" timestamp="1597731918205" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600234918383">
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1602565175904">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1600234918383" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1602565175904" />
     <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1597242712640">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

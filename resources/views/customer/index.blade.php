@@ -7,15 +7,15 @@
                             <li>
                                 <div class="feature-i-left ptb_40">
                                     <div class="icon-right Shipping"></div>
-                                    <h6>Free Shipping</h6>
-                                    <p>Free delivery worldwide</p>
+                                    <h6>Delivery Countrywide</h6>
+                                    <p>Delivery countrywide</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="feature-i-left ptb_40">
                                     <div class="icon-right Order"></div>
                                     <h6 >Order Online</h6>
-                                    <p>Hours : 8am - 11pm</p>
+                                    <p>Available 24 Hours</p>
                                 </div>
                             </li>
                             <li>

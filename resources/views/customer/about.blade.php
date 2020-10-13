@@ -41,7 +41,7 @@
                                 <h2><strong>WHAT WE DO</strong></h2>
                             </div>
                             <p>
-                                Devices Technology Store is a leading  e-retailer committed to becoming the most loved and trusted technology store in Kenya. We have a wide variety of electronic products ranging from computers, printers, ink and toners, storage devices, network accessories and we have the most affordable prices.
+                                Icons Computer Store is a leading  e-retailer committed to becoming the most loved and trusted technology store in Kenya. We have a wide variety of electronic products ranging from computers, printers, ink and toners, storage devices, network accessories and we have the most affordable prices.
                             </p>
                         </div>
 
