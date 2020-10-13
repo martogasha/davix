@@ -163,12 +163,6 @@
                                                             </div>
                                                         @else
                                                         @endif
-                                                        <div class="button-group text-center">
-                                                            <form class="view" id="laptopForm">
-                                                                <input type="hidden" value="{{$computer->id}}" name="productId" id="laptop">
-                                                            <button type="submit" class="btn btn-info">ADD TO CART</button>
-                                                            </form>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -201,12 +195,7 @@
                                                             </div>
                                                         @else
                                                         @endif
-                                                        <div class="button-group text-center">
-                                                            <form class="view" id="laptopForm">
-                                                                <input type="hidden" value="{{$office->id}}" name="productId" id="laptop">
-                                                                <button type="submit" class="btn btn-info">ADD TO CART</button>
-                                                            </form>
-                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -239,12 +228,6 @@
                                                             </div>
                                                         @else
                                                         @endif
-                                                        <div class="button-group text-center">
-                                                            <form class="view" id="laptopForm">
-                                                                <input type="hidden" value="{{$cctv->id}}" name="productId" id="laptop">
-                                                                <button type="submit" class="btn btn-info">ADD TO CART</button>
-                                                            </form>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
