@@ -13,81 +13,10 @@
     </div>
     <!-- =====  BREADCRUMB END===== -->
     <div class="row">
-    <div class="container">
-        <div class="row db-padding-btm db-attached">
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                 <div class="db-wrapper">
-                    <div class="db-pricing-eleven db-bk-color-one">
-                        <div class="price">
-                            <sup>Ksh</sup>2000
-                            <small>2MBPS</small>
-                        </div>
-                        <div class="type">
-                            BASIC PLAN
-                        </div>
-                        <ul>
-
-                            <li><i class=""></i>Unlimited Internet </li>
-                            <li><i class=""></i>No Buffering </li>
-                            <li><i class=""></i>Fast Uploads</li>
-                        </ul>
-                        <div class="pricing-footer">
-
-                            <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
-                        </div>
-                    </div>
+                    <img src="images/internet.jpg" style="height:600px;width:1000px">
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <div class="db-wrapper">
-                    <div class="db-pricing-eleven db-bk-color-two popular">
-                        <div class="price">
-                            <sup>Ksh</sup>2000
-                            <small>2MBPS</small>
-                        </div>
-                        <div class="type">
-                            MEDIUM PLAN
-                        </div>
-                        <ul>
-
-                            <li><i class=""></i>Unlimited Internet </li>
-                            <li><i class=""></i>No Buffering </li>
-                            <li><i class=""></i>Fast Uploads</li>
-                        </ul>
-                        <div class="pricing-footer">
-
-                            <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <div class="db-wrapper">
-                    <div class="db-pricing-eleven db-bk-color-three">
-                        <div class="price">
-                            <sup>Ksh</sup>2000
-                            <small>2MBPS</small>
-                        </div>
-                        <div class="type">
-                            PRO PLAN
-                        </div>
-                        <ul>
-
-                            <li><i class=""></i>Unlimited Internet </li>
-                            <li><i class=""></i>No Buffering </li>
-                            <li><i class=""></i>Fast Uploads</li>
-                        </ul>
-                        <div class="pricing-footer">
-
-                            <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-
-    </div>
 </div>
 <style>
     .db-bk-color-one {

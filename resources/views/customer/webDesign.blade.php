@@ -21,7 +21,7 @@
                             <h2 class="title">Web Design and <span>Development</span></h2>
                         </div>
                         <p>
-                            Client-focused, customer-centric, creating website solutions that deliver tangible business results, Appnovation's web developers helps brands the ever-changing digital landscape.
+                            Client-focused, customer-centric, creating website solutions that deliver tangible business results, Application web developers helps brands the ever-changing digital landscape.
                         </p>
                         <br>
                         <button class="btn btn-info">Get Quote</button>

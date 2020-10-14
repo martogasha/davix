@@ -11,7 +11,6 @@
             <li class="active">Computer Repair and Maintenance</li>
         </ul>
     </div>
-    <!-- =====  BREADCRUMB END===== -->
     <div class="row">
         <section class="section-services">
             <div class="container">
@@ -20,26 +19,28 @@
                         <div class="header-section">
                             <h2 class="title">Computer Repair and <span>Maintenance</span></h2>
                         </div>
+                        <p>
+                        <p class="description">
+                        <p>WE SERVICE ALL KINDS OF COMPUTERS</p>
+                        <br>
+                        Our computer repair services include desktop and laptop computers of all types and brands, particularly PC type computers. We can also repair/replace your laptop screen or backlighting issue depending upon your computer make and model. Your laptop computer keyboard replacement is also possible, once again, depending upon make and model. Having difficulties with your printer(s)? We provide printer troubleshooting and printer setup.
+                        </p>
+                        <br>
+                        WE'LL BRING YOUR COMPUTERS UP TO SPEED
+                        <br>
+                        <br>
+                        Computer running slowly? This can be absolutely agonizing. You, or your staff members can go crazy waiting for programs to process, documents to print; the list is endless. We provide desktop and laptop tune-ups to get top PC performance at a very reasonable price. Our computer maintenance programs will save both time and money and keep your computers running smoothly.Having computer virus issues? We can scan, detect and remove viruses for you. We can also set up a virus protection program to block viruses infections.
+                        <br>
+                        <br>
+                        <button class="btn btn-info">Get Quote</button>                        </p>
+                        <br>
                     </div>
                 </div>
-                <p class="description">
-                <p>WE SERVICE ALL KINDS OF COMPUTERS</p>
-                    <br>
-                    Our computer repair services include desktop and laptop computers of all types and brands, particularly PC type computers. We can also repair/replace your laptop screen or backlighting issue depending upon your computer make and model. Your laptop computer keyboard replacement is also possible, once again, depending upon make and model. Having difficulties with your printer(s)? We provide printer troubleshooting and printer setup.
-                </p>
-                <br>
-                WE'LL BRING YOUR COMPUTERS UP TO SPEED
-                <br>
-                <br>
-                Computer running slowly? This can be absolutely agonizing. You, or your staff members can go crazy waiting for programs to process, documents to print; the list is endless. We provide desktop and laptop tune-ups to get top PC performance at a very reasonable price. Our computer maintenance programs will save both time and money and keep your computers running smoothly.Having computer virus issues? We can scan, detect and remove viruses for you. We can also set up a virus protection program to block viruses infections.
-                <br>
-                <br>
-                <button class="btn btn-info">Get Quote</button>
-
             </div>
         </section>
 
     </div>
+    <!-- =====  BREADCRUMB END===== -->
 <style>
     a,p,h1,h2,h3,h4,ul {
         margin: 0;

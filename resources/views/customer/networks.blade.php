@@ -21,7 +21,7 @@
                             <h2 class="title">Networking <span>Services</span></h2>
                         </div>
                         <p class="description">
-                            Get Real time and Playback on your Phone /Laptop While Away .</p>
+                            Any business is only as productive as its weakest link – don’t let that link be your company network. An unreliable (or, even worse, broken) intercompany network can cripple a business while directly affecting the bottom line. Ensuring your network makes sense for your business while maintaining proper connectivity and permissions is what our certified IT professionals do best through our computer network services. Modern Data has the knowledge and experience gained from working with some of the largest companies to make your network work for you.</p>
                         <br>
                         <button class="btn btn-info">Get Quote</button>
                     </div>
