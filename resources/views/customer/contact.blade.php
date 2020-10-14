@@ -12,7 +12,18 @@
                     </div>
                 <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+254 727 995 279<br></div>
                 <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+254 734 421 552<br></div>
-                <div class="email mt_10"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@iconztech.com" target="_top">info@yourdomailname.com</a></div>
+                <div class="email mt_10"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:info@iconztech.com" target="_top">info@icoztech.com</a>
+                </div>
+                <div class="email mt_10"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:info@iconztech.com" target="_top">sales@icoztech.com</a>
+                </div>
+                <br>
+                <h5><b>Working Hours</b></h5>
+                <br>
+                <h6><b>Monday- Friday: 8am to 7pm</b></h6>
+                <h6><b>Saturday : 9am to 6pm</b></h6>
+                <h6><b>Sunday : Closed</b></h6>
 
             </div>
         </div>
