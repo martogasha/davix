@@ -2,19 +2,7 @@
 <title>Icons Computer - All Categories</title>
 
 <div class="filter left-sidebar-widget mb_50">
-                    <div class="heading-part mtb_20 ">
-                        <h2 class="main_title">Refine Search</h2>
-                    </div>
-                    <div class="filter-block">
-                        <p>
-                            <label for="amount">Price range:</label>
-                            <input type="text" id="amount" readonly>
-                        </p>
-                        <div id="slider-range" class="mtb_20"></div>
-                        <div class="list-group">
-                            <button type="button" class="btn">Refine Search</button>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="left_banner left-sidebar-widget mb_50"> <a href="#"><img src="images/left1.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
             </div>

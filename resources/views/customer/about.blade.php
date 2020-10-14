@@ -62,7 +62,7 @@
                             <div class="team-designation mt_20">Marketing Manager</div>
                             <h4 class="team-title  mtb_10">David Karanja </h4>
                             <br>
-                            <button class="btn btn-info">0712345678</button>
+                            <button class="btn btn-info">+254727995279</button>
 
                         </div>
                         <div class="item team-detail">
@@ -70,7 +70,7 @@
                             <div class="team-designation mt_20">Support & Sales</div>
                             <h4 class="team-title  mtb_10">Mwaura karanja </h4>
                             <br>
-                            <button class="btn btn-info">0712345678</button>
+                            <button class="btn btn-info">0734421552</button>
 
                         </div>
                     </div>

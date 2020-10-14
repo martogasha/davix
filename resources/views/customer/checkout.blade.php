@@ -127,7 +127,8 @@
                                 <div class="radio">
                                     <label>
                                         <input type="radio" checked="checked" value="cash" name="cash">
-                                        Cash On Delivery </label>
+                                        Cash On Delivery(<b>APPLICABLE WITHIN NAIROBI CBD</b>)
+                                    </label>
                                 </div>
 
                                 <div class="radio">
