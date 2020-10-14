@@ -22,7 +22,7 @@
                                 <div class="feature-i-left ptb_40">
                                     <div class="icon-right Save"></div>
                                     <h6>Shop And Save</h6>
-                                    <p>For All Spices & Herbs</p>
+                                    <p>For All Electronics</p>
                                 </div>
                             </li>
                             <li>
