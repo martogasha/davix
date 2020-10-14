@@ -65,6 +65,7 @@ class ProductController extends Controller
         $pictures = new Product();
         $pictures->product_name = $request->input('name');
         $pictures->product_desc = $request->input('desc');
+        $pictures->price = $request->input('priceC');
         $pictures->product_price = $request->input('price');
         $pictures->product_category = $request->input('category');
         $pictures->product_category1 = $request->input('category1');
@@ -116,6 +117,7 @@ class ProductController extends Controller
         }
         $edit->product_name = $request->name;
         $edit->product_desc = $request->desc;
+        $edit->price = $request->priceC;
         $edit->product_price = $request->input('price');
 
         $edit->product_category = $request->category;

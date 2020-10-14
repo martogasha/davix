@@ -494,6 +494,10 @@
                                 <label for="recipient-name" class="col-form-label">Product Price:</label>
                                 <input type="text" class="form-control" value="{{$product->product_price}}" name="price" id="recipient-name">
                             </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Product Price Cancel:</label>
+                                    <input type="text" class="form-control" value="{{$product->price}}" name="priceC" id="recipient-name">
+                                </div>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Product Category:</label>
                                 <select class="form-control" name="category" id="exampleFormControlSelect1">

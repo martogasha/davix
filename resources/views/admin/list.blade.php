@@ -230,6 +230,8 @@
                         </a>
                         <h6>{{$product->product_name}}</h6>
                         <h4>Ksh:{{$product->product_price}}</h4>
+                        <h5 class="text-muted"><s>Ksh:{{$product->price}}</s></h5>
+
                         <div class="row">
                         <a href="{{url('editProductDetails',$product->id)}}"><button class="btn btn-info">
                             Edit
@@ -296,6 +298,10 @@
                         <input type="text" class="form-control" name="price" id="recipient-name">
                     </div>
                 <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Product Price Cancel:</label>
+                    <input type="text" class="form-control" name="priceC" id="recipient-name">
+                </div>
+                <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Product Category:</label>
                     <select class="form-control" name="category" id="exampleFormControlSelect1">
                         <option value="computer">Computer Accessories</option>
@@ -334,20 +340,6 @@
                         <option value="GATEWAY">GATEWAY</option>
                         <option value="INTEL">INTEL</option>
                         <option value="GIGABYTE">GIGABYTE</option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     </select>
                 </div>
