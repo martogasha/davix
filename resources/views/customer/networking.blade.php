@@ -81,6 +81,7 @@
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
                                     </div>
                                     <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$searchProduct->product_price}}</span></span>
+                                    <h5 class="text-muted"><s>Ksh:{{$searchProduct->price}}</s></h5>
                                     <p class="product-desc mt_20 mb_60"> More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.Cover Flow. Browse through your music collection by flipping..</p>
                                     <div class="button-group text-center">
                                         <form action="{{url('cartOne')}}" method="post">

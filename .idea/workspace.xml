@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_092048_add_price_to_products_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/computers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/computers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/homeAppliance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/homeAppliance.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/laptops.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/laptops.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/networking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/networking.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/office.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/office.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/printers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/printers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/projector.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/projector.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/shop.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/software.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/software.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/storage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/storage.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +228,8 @@
       <workItem from="1602573513859" duration="1033000" />
       <workItem from="1602584819961" duration="4654000" />
       <workItem from="1602660766569" duration="45000" />
-      <workItem from="1602664599433" duration="3577000" />
+      <workItem from="1602664599433" duration="4339000" />
+      <workItem from="1602669886591" duration="402000" />
     </task>
     <servers />
   </component>

@@ -124,7 +124,9 @@
                                                         </span>
                                                     </div>
                                                     <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$home->product_price}}</span></span>
-                                                    @if($home->status==1)
+                                                    <h5 class="text-muted"><s>Ksh:{{$home->price}}</s></h5>
+
+                                                @if($home->status==1)
                                                     <div class="button-group text-center">
                                                             <button type="submit" class="btn btn-info">Out of Stock</button>
                                                     </div>
@@ -157,7 +159,8 @@
                                                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$computer->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
                                                         <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$computer->product_price}}</span></span>
-                                                        @if($computer->status==1)
+                                                        <h5 class="text-muted"><s>Ksh:{{$computer->price}}</s></h5>
+                                                    @if($computer->status==1)
                                                             <div class="button-group text-center">
                                                                 <button type="submit" class="btn btn-info">Out of Stock</button>
                                                             </div>
@@ -189,7 +192,8 @@
                                                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$office->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
                                                         <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$office->product_price}}</span></span>
-                                                        @if($office->status==1)
+                                                        <h5 class="text-muted"><s>Ksh:{{$office->price}}</s></h5>
+                                                    @if($office->status==1)
                                                             <div class="button-group text-center">
                                                                 <button type="submit" class="btn btn-info">Out of Stock</button>
                                                             </div>
@@ -222,7 +226,8 @@
                                                         <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$cctv->product_name}}</a></h6>
                                                         <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span> </div>
                                                         <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$cctv->product_price}}</span></span>
-                                                        @if($cctv->status==1)
+                                                        <h5 class="text-muted"><s>Ksh:{{$cctv->price}}</s></h5>
+                                                    @if($cctv->status==1)
                                                             <div class="button-group text-center">
                                                                 <button type="submit" class="btn btn-info">Out of Stock</button>
                                                             </div>
