@@ -12,7 +12,7 @@
                     </div>
                 <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+254 727 995 279<br></div>
                 <div class="call mt_10"><i class="fa fa-phone" aria-hidden="true"></i>+254 734 421 552<br></div>
-                <div class="email mt_10"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@yourdomailname.com" target="_top">info@yourdomailname.com</a></div>
+                <div class="email mt_10"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@iconztech.com" target="_top">info@yourdomailname.com</a></div>
 
             </div>
         </div>
