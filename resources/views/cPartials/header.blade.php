@@ -171,7 +171,7 @@
                                     <li><a href="{{url('printers')}}">Printers</a></li>
                                     <li><a href="{{url('cctv')}}">CCTV Systems</a></li>
                                     <li><a href="{{url('laptops')}}">Laptops</a></li>
-                                    <li><a href="{{url('storage')}}">Storage</a></li>
+                                    <li><a href="{{url('storages')}}">Storage</a></li>
                                     <li><a href="{{url('software')}}">Softwares</a></li>
                                     <li><a href="{{url('ups')}}">UPS Backups</a> </li>
                                 </ul>
@@ -208,7 +208,7 @@
                             <li><a href="{{url('printers')}}">Printers</a></li>
                             <li><a href="{{url('cctv')}}">CCTV Systems</a></li>
                             <li><a href="{{url('laptops')}}">Laptops</a></li>
-                            <li><a href="{{url('storage')}}">Storage</a></li>
+                            <li><a href="{{url('storages')}}">Storage</a></li>
                             <li><a href="{{url('software')}}">Softwares</a></li>
                             <li><a href="{{url('ups')}}">UPS Backups</a> </li>
                         </ul>

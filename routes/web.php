@@ -38,7 +38,7 @@ Route::get('ups','CategoryController@ups');
 Route::get('printers','CategoryController@printers');
 Route::get('cctv','CategoryController@cctv');
 Route::get('laptops','CategoryController@laptops');
-Route::get('storage','CategoryController@storage');
+Route::get('storages','CategoryController@storage');
 Route::get('software','CategoryController@software');
 
 Route::resource('Login','LoginController');
