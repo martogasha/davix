@@ -151,7 +151,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/brand" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../saleManagement" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -220,7 +220,7 @@
       <workItem from="1602664599433" duration="4339000" />
       <workItem from="1602669886591" duration="402000" />
       <workItem from="1602673415640" duration="8527000" />
-      <workItem from="1602740446918" duration="3870000" />
+      <workItem from="1602740446918" duration="4636000" />
     </task>
     <servers />
   </component>
@@ -244,11 +244,11 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="312" width="523" height="274" key="ComposerInitDialogKey/0.27.1366.741@0.27.1366.741" timestamp="1597731918205" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1602660808081">
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1602748300249">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="155" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1360.768@0.27.1366.741" timestamp="1602660808081" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1602565175904" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1602748300249" />
     <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1597242712640">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

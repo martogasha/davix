@@ -118,7 +118,7 @@ class CategoryController extends Controller
         ]);
     }
     public function storage(){
-        $searchProducts = Product::where('product_category','storage')->get();
+        $searchProducts = Product::where('product_category','hardDisk')->get();
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
         return view('customer.storage',[
