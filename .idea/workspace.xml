@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/avv.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/Park.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/bLogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/brand/davix.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/about.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +220,7 @@
       <workItem from="1602664599433" duration="4339000" />
       <workItem from="1602669886591" duration="402000" />
       <workItem from="1602673415640" duration="8527000" />
-      <workItem from="1602740446918" duration="2113000" />
+      <workItem from="1602740446918" duration="3870000" />
     </task>
     <servers />
   </component>

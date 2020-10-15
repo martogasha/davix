@@ -312,7 +312,7 @@
                         <option value="printer">Printers</option>
                         <option value="cctv">CCTV Systems</option>
                         <option value="laptop">Laptop</option>
-                        <option value="hardDisk">Hard Disks</option>
+                        <option value="hardDisk">Storage</option>
                         <option value="software">Softwares</option>
                         <option value="ups">UPS Backups</option>
 
