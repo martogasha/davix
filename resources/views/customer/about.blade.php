@@ -58,7 +58,7 @@
                 <div class="team_grid box">
                     <div class="team3col  owl-carousel">
                         <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/team.jpeg" alt="" /> </div>
+                            <div class="team-item-img"> <img src="images/team.jpeg" alt="" style="width:400px;height:250px;"/> </div>
                             <div class="team-designation mt_20">Marketing Manager</div>
                             <h4 class="team-title  mtb_10">David Karanja </h4>
                             <br>
@@ -66,7 +66,7 @@
 
                         </div>
                         <div class="item team-detail">
-                            <div class="team-item-img"> <img src="images/tm.jpg" alt="" /> </div>
+                            <div class="team-item-img"> <img src="images/avv.jpeg" alt="" style="width:400px;height:250px;"/> </div>
                             <div class="team-designation mt_20">Support & Sales</div>
                             <h4 class="team-title  mtb_10">Mwaura karanja </h4>
                             <br>
@@ -84,26 +84,9 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="brand owl-carousel ptb_20">
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/hplogo.jpg" alt="Disney" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/lg.jpg" alt="Harley" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/samsung.jpg" alt="Dell" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/app.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/microsoft.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/asus.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/dell.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/lenovo.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/ace.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/fff.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/toshiba.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/android.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/ibm.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/gateway.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/intel.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/gigabyte.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/msi.jpg" alt="Canon" class="img-responsive" /></a> </div>
-                                        <div class="item text-center"> <a href="#"><img src="images/brand/shuttle.jpg" alt="Canon" class="img-responsive" /></a> </div>
-
-
+                                        <div class="item text-center"> <a href="www.braxlan.com"><img src="images/brand/bLogo.jpg" alt="Disney" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/davix.jpg" alt="Harley" class="img-responsive" /></a> </div>
+                                        <div class="item text-center"> <a href="#"><img src="images/brand/Park.jpg" alt="Harley" class="img-responsive"/></a> </div>
                                     </div>
                                 </div>
                             </div>
