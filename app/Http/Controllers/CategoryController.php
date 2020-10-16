@@ -88,7 +88,7 @@ class CategoryController extends Controller
         ]);
     }
     public function printers(){
-        $searchProducts = Product::where('product_category','printers')->get();
+        $searchProducts = Product::where('product_category','printer')->get();
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
         return view('customer.printers',[
