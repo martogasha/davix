@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="shortcut icon" href="images/fav.png">
+    <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
