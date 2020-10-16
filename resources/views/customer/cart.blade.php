@@ -88,7 +88,7 @@
                     <div class="collapse navbar-collapse js-navbar-collapse pull-right">
                         <ul id="menu" class="nav navbar-nav">
                                 <li> <a href="{{url('/')}}">Home</a></li>
-                                <li> <a href="{{url('category')}}">Shop</a></li>
+                                <li> <a href="{{url('shop')}}">Shop</a></li>
                             <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>
                                 <ul class="dropdown-menu">
                                     <li> <a href="{{url('cameraService')}}">CCTV and Surveillance System</a></li>
