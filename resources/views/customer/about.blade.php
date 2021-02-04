@@ -111,7 +111,7 @@
 </div>
 <style>
     #map{
-        width: 950px;
+        width: 400px;
         height: 400px;
     }
 </style>
