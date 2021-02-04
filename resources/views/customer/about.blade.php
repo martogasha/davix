@@ -92,14 +92,19 @@
                             </div>
                         </div>
                     </div>
+                    <div id="brand_carouse" class="ptb_30 text-center">
+                        <div class="type-01">
+                            <div class="heading-part mb_20 ">
+                                <h2 class="main_title">Directions</h2>
+                            </div>
+                            <div class="row">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
-                <div class="heading-part mb_10">
-                    <h2 class="main_title mt_50">Directions</h2>
-                </div>
-
-                    <div id="map"></div>
+            </div>
 
         </div>
     </div>
