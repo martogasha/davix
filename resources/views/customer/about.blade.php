@@ -12,7 +12,7 @@
                                 <h2><strong>ABOUT US</strong></h2>
                             </div>
                             <p>
-                                Icons Computer Technologies Store is a large and well-established IT company headquartered in Kikuyu. Xping delivers ICT Consultancy, CCTV Camera Installation, Data Recovery, ICT related Training, Web designs, Business Solutions and systems, Networking and Maintenance Services.
+                                Icons Computer Technologies is a large and well-established IT company headquartered in Kikuyu. Icons delivers ICT Consultancy, CCTV Camera Installation, Data Recovery, Web designs, Business Systems, Networking, Biometric access control systems and Maintenance Services.
                             </p>
                         </div>
 
