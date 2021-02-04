@@ -12,7 +12,7 @@
                                 <h2><strong>ABOUT US</strong></h2>
                             </div>
                             <p>
-                                Icons Computer  Technologies Store is a leading e-retailer  committed to becoming the most loved and trusted store for all computers and IT products by providing a great shopping experience, rapid delivery, tech customer service and provide the best warranty support.
+                                Icons Computer Technologies Store is a large and well-established IT company headquartered in Kikuyu. Xping delivers ICT Consultancy, CCTV Camera Installation, Data Recovery, ICT related Training, Web designs, Business Solutions and systems, Networking and Maintenance Services.
                             </p>
                         </div>
 
@@ -95,12 +95,21 @@
 
                 </div>
 
+                <div class="heading-part mb_10">
+                    <h2 class="main_title mt_50">Directions</h2>
+                </div>
 
-            </div>
+                    <div id="map"></div>
 
         </div>
     </div>
 </div>
+<style>
+    #map{
+        width: 950px;
+        height: 400px;
+    }
+</style>
 
 <!-- Single Blog  -->
 
@@ -121,6 +130,25 @@
 <script src="js/custom.js"></script>
 
 </body>
+<script>
+    x = navigator.geolocation;
+    x.getCurrentPosition(success, failure);
+    function success(position){
+        var myLat = -1.244494;
+        var myLong = 36.664079;
+        var coords = new google.maps.LatLng(myLat,myLong);
+        var mapOptions = {
+            zoom:9,
+            center: coords,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({map:map, position:coords});
+    }
+    function failure(){
+    }
+
+</script>
 
 <!-- Mirrored from html.lionode.com/fastro/f001/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 27 May 2020 06:07:54 GMT -->
 </html>

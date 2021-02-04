@@ -31,6 +31,15 @@
     <link rel="apple-touch-icon" sizes="72x72" href="{{asset('images/apple-touch-icon-72x72.html')}}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{asset('images/apple-touch-icon-114x114.html')}}">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCSep1_X0VG3LdRZimkZfpQ0Pt8HMDO6Zs"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSep1_X0VG3LdRZimkZfpQ0Pt8HMDO6Zs&callback=initMap&libraries=&v=weekly"
+        defer
+    >
+
+    </script>
 </head>
 <body>
 <!-- =====  LODER  ===== -->
