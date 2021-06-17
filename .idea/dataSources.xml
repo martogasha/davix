@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="davix@localhost" uuid="a26843fc-6b07-42a8-8f6f-30130223e10d">
+    <data-source source="LOCAL" name="MySQL - kiibe@localhost" uuid="43a26071-6ce6-481f-88d5-4e8510759068">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/davix</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/kiibe</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
 </project>

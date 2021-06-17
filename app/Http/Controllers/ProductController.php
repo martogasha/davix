@@ -23,7 +23,7 @@ class ProductController extends Controller
         }
     }
     public function home(){
-        $homes = Product::all();
+        $homes = Product::where('product_category','hardDisk')->get();
         $computers = Product::where('product_category','computer')->get();
         $offices = Product::where('product_category','networking')->get();
         $toners = Product::where('product_category','toner')->get();

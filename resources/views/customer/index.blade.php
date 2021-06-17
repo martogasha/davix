@@ -38,7 +38,7 @@
 
                 <div id="column-right" class="col-sm-8 col-md-8 col-lg-9 mtb_30">
                     <!-- =====  BANNER STRAT  ===== -->
-                    <div class="banner">
+                    <div class="banner" data-ride="carousel">
                         <div class="main-banner owl-carousel">
                             <div class="item"><a href="{{url('phones')}}"><img src="images/adver2.jpg" alt="Main Banner" class="img-responsive" /></a></div>
                             <div class="item"><a href="{{url('phones')}}"><img src="images/add.jpg" alt="Main Banner" class="img-responsive" /></a></div>
@@ -94,7 +94,7 @@
                     <!-- =====  PRODUCT TAB  ===== -->
                     <div id="product-tab" class="mt_40">
                         <div class="heading-part mb_20 ">
-                            <a href="{{url('shop')}}"> <h2 class="main_title">Best Selling Products</h2></a>
+                            <a href="{{url('shop')}}"> <h2 class="main_title">Storage Products</h2></a>
                         </div>
                         <div class="tab-content clearfix box">
                             <div class="tab-pane active" id="nArrivals">
@@ -426,6 +426,12 @@
 
             });
         });
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 2000,
+                pause: "false"
+            });
+        })
 
     </script>
 

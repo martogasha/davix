@@ -26,23 +26,22 @@
             <div class="col-md-2 footer-block">
                 <h6 class="footer-title ptb_20">Categories</h6>
                 <ul>
-                    <li><a href="#">Computer & Office</a></li>
-                    <li><a href="#">Electronics and Home Appliance</a></li>
-                    <li><a href="#">Networking</a></li>
-                    <li><a href="#">Phones and Tablets</a></li>
-                    <li><a href="#">CCTV and Safetys</a></li>
-                    <li><a href="#">Laptops</a></li>
+                    <li><a href="{{url('office')}}">Computer & Office</a></li>
+                    <li><a href="{{url('electronics')}}">Electronics and Home Appliance</a></li>
+                    <li><a href="{{url('networking')}}">Networking</a></li>
+                    <li><a href="{{url('cctv')}}">CCTV and Safetys</a></li>
+                    <li><a href="{{url('laptops')}}">Laptops</a></li>
                 </ul>
             </div>
             <div class="col-md-2 footer-block">
                 <h6 class="footer-title ptb_20">Services</h6>
                 <ul>
-                    <li><a href="contact.html">CCTV and Surveillance Systems</a></li>
-                    <li><a href="#">Networking</a></li>
-                    <li><a href="#">Home and Office Internet</a></li>
-                    <li><a href="#">Data Recovery and Backup</a></li>
-                    <li><a href="#">Computer Repair and Maintenance</a></li>
-                    <li><a href="#">Web Design and Development</a></li>
+                    <li><a href="{{url('cameraService')}}">CCTV and Surveillance Systems</a></li>
+                    <li><a href="{{url('NetworkingService')}}">Networking</a></li>
+                    <li><a href="{{url('internet')}}">Home and Office Internet</a></li>
+                    <li><a href="{{url('dataRecovery')}}">Data Recovery and Backup</a></li>
+                    <li><a href="{{url('maintenance')}}">Computer Repair and Maintenance</a></li>
+                    <li><a href="{{url('webDesign')}}">Web Design and Development</a></li>
                 </ul>
             </div>
             <div class="col-md-2 footer-block">

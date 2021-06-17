@@ -38,9 +38,7 @@
                         <td>{{$order->order_quantity}}</td>
                         <td>{{$order->product->product_price * $order->order_quantity}}</td>
                         <td><span class="badge badge-info">{{$order->order_status}}</span></td>
-                        <td><span class="badge badge-danger">{{$order->order_status1}}</span></td>
-
-
+                        <td><span class="badge badge-success">{{$order->order_status1}}</span></td>
                     </tr>
                     @endforeach
                     </tbody>

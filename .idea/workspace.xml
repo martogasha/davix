@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="" />
+    <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809113.flash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809419.flash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809456.camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809830.Dell-USB-Business-Keyboard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618810090.mouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618810180.Camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618810226.router.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a26843fc-6b07-42a8-8f6f-30130223e10d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a26843fc-6b07-42a8-8f6f-30130223e10d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/asset/img/user55.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/img/user55.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Battery.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Battery.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adapter.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adapter.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/add.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/add.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/adver2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adver2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/avv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/avv.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/Park.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/Park.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/ace.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/ace.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/android.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/android.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/app.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/app.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/asus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/asus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/bLogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/bLogo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/davix.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/davix.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/dell.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/dell.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/fff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/fff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/gateway.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/gateway.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/gigabyte.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/gigabyte.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/ibm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/ibm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/intel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/intel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/lenovo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/lenovo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/lg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/lg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/microsoft.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/microsoft.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/msi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/msi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/samsung.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/samsung.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/shuttle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/shuttle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/toshiba.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/toshiba.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/charger.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/charger.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/coursehero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/coursehero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fav.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/internet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/internet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/keyboard.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/keyboard.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/ram.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ram.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/repair.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/repair.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/sale.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sale.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/ssd.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ssd.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/team.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/team.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597384738.flirt-chocolate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597384738.flirt-chocolate.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597385224.JAMSON BLACK BARREL.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597385224.JAMSON BLACK BARREL.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597386149.sminoff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597386149.sminoff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597408896.NEON.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597408896.NEON.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597409377.best-whisky.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597409377.best-whisky.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418706.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418706.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418728.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418728.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418759.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418759.3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418853.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418853.4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418939.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418939.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418963.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418963.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597419005.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597419005.3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597419067.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597419067.4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597494930.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597494930.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597588971.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597588971.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597637900.best-liquer-creae-600x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597637900.best-liquer-creae-600x600.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597637968.3-Bloom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597637968.3-Bloom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597639595.ttttvvvv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597639595.ttttvvvv.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597639656.ttttvvvv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597639656.ttttvvvv.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597742946.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597742946.4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598349868.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598349868.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598415923.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598415923.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598416518.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598416518.3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598451519.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598451519.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598466970.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598466970.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598467279.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598467279.4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598790790.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598790790.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598790821.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598790821.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598974674.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598974674.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1599455456.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1599455456.3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1599455987.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1599455987.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600189378.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600189378.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600255879.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600255879.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600255940.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600255940.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600256019.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600256019.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600256070.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600256070.2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600256098.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600256098.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1602567486.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1602567486.4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1602668480.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1602668480.1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cPartials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/trackOrder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/trackOrder.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +121,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -148,6 +251,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -160,15 +264,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/customer" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/images/brand" />
       <recent name="$PROJECT_DIR$/resources/views/customer" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/public/asset/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/customer" />
     </key>
   </component>
   <component name="RunManager">
@@ -232,58 +336,42 @@
       <workItem from="1603394345682" duration="343000" />
       <workItem from="1611136516870" duration="1280000" />
       <workItem from="1612424744222" duration="3790000" />
+      <workItem from="1618808112643" duration="1923000" />
+      <workItem from="1618811790337" duration="2452000" />
+      <workItem from="1619005937757" duration="43000" />
+      <workItem from="1619685587123" duration="5332000" />
+      <workItem from="1619707679415" duration="8000" />
+      <workItem from="1620382390719" duration="1351000" />
+      <workItem from="1620537845700" duration="165000" />
+      <workItem from="1620977176656" duration="16000" />
+      <workItem from="1620977334806" duration="425000" />
+      <workItem from="1620984663472" duration="4773000" />
+      <workItem from="1621453198448" duration="14510000" />
+      <workItem from="1621930600978" duration="45000" />
+      <workItem from="1623218739494" duration="84000" />
+      <workItem from="1623936784047" duration="1794000" />
+      <workItem from="1623942920872" duration="541000" />
+      <workItem from="1623947873467" duration="2640000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="278" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597384945055">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="278" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1597384945055" />
-    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600414151510">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="416" y="141" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.662@0.27.1366.662" timestamp="1597399068936" />
-    <state x="416" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1600414151510" />
-    <state x="416" y="312" width="523" height="274" key="ComposerInitDialogKey" timestamp="1597731918205">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="416" y="312" width="523" height="274" key="ComposerInitDialogKey/0.27.1366.741@0.27.1366.741" timestamp="1597731918205" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603377491804">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="466" y="155" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1360.768@0.27.1366.741" timestamp="1602660808081" />
-    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1603377491804" />
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1597242712640">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1597242712640" />
-    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1597242712640">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1597242712640" />
-    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1597242712639">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1597242712639" />
-    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1597242712640">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1597242712640" />
-    <state x="346" y="26" key="search.everywhere.popup" timestamp="1602591856298">
-      <screen x="0" y="27" width="1366" height="662" />
-    </state>
-    <state x="346" y="26" key="search.everywhere.popup/0.27.1366.662@0.27.1366.662" timestamp="1602591856298" />
-    <state x="408" y="300" width="540" height="201" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602839070790">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="408" y="300" width="540" height="201" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.741@0.27.1366.741" timestamp="1602839070790" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
