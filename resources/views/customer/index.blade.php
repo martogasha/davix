@@ -94,18 +94,18 @@
                     <!-- =====  PRODUCT TAB  ===== -->
                     <div id="product-tab" class="mt_40">
                         <div class="heading-part mb_20 ">
-                            <a href="{{url('shop')}}"> <h2 class="main_title">Storage Products</h2></a>
+                            <a href="{{url('shop')}}"> <h2 class="main_title">Best Selling Products</h2></a>
                         </div>
                         <div class="tab-content clearfix box">
                             <div class="tab-pane active" id="nArrivals">
                                 <div class="nArrivals owl-carousel">
-                                    @foreach($homes as $home)
+                                    @foreach($bests as $best)
                                     <div class="product-grid">
                                         <div class="item">
                                             <div class="product-thumb">
-                                                <div class="image product-imageblock"> <a href="{{url('productDetail',$home->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$home->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$home->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                                                <div class="image product-imageblock"> <a href="{{url('productDetail',$best->id)}}"> <img data-name="product_image" src="{{asset('uploads/product/'.$best->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="{{asset('uploads/product/'.$best->product_image)}}" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
                                                 <div class="caption product-detail text-left">
-                                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$home->product_name}}</a></h6>
+                                                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">{{$best->product_name}}</a></h6>
                                                     <div class="rating">
                                                         <span class="fa fa-stack">
                                                             <i class="fa fa-star fa-stack-1x"></i>
@@ -123,10 +123,10 @@
                                                             <i class="fa fa-star fa-stack-x"></i>
                                                         </span>
                                                     </div>
-                                                    <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$home->product_price}}</span></span>
-                                                    <h5 class="text-muted"><s>Ksh:{{$home->price}}</s></h5>
+                                                    <span class="price"><span class="amount"><span class="currencySymbol">Ksh:</span>{{$best->product_price}}</span></span>
+                                                    <h5 class="text-muted"><s>Ksh:{{$best->price}}</s></h5>
 
-                                                @if($home->status==1)
+                                                @if($best->status==1)
                                                     <div class="button-group text-center">
                                                             <button type="submit" class="btn btn-info">Out of Stock</button>
                                                     </div>

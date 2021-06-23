@@ -304,6 +304,7 @@
                 <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Product Category:</label>
                     <select class="form-control" name="category" id="exampleFormControlSelect1">
+                        <option value="bestSelling">Best Selling</option>
                         <option value="computer">Computer Accessories</option>
                         <option value="networking">Networking</option>
                         <option value="office">Office Tools and Stationery</option>

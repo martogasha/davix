@@ -23,6 +23,7 @@ class ProductController extends Controller
         }
     }
     public function home(){
+        $bests = Product::where('product_category','bestSelling')->get();
         $homes = Product::where('product_category','hardDisk')->get();
         $computers = Product::where('product_category','computer')->get();
         $offices = Product::where('product_category','networking')->get();
@@ -36,6 +37,7 @@ class ProductController extends Controller
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
         return view('customer.index',[
+            'bests'=>$bests,
             'homes'=>$homes,
             'computers'=>$computers,
             'offices'=>$offices,
