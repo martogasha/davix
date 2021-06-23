@@ -363,8 +363,15 @@
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/jquery.firstVisitPopup.js"></script>
     <script src="js/custom.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG6TPLN1NJ"></script>
     </body>
     <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-EG6TPLN1NJ');
+
         $('#homeForm').on('submit',function (event) {
             event.preventDefault();
             productId = $('#home').val();

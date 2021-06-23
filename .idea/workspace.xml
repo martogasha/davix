@@ -2,100 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809113.flash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809419.flash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809456.camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618809830.Dell-USB-Business-Keyboard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618810090.mouse.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618810180.Camera.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/product/1618810226.router.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a26843fc-6b07-42a8-8f6f-30130223e10d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a26843fc-6b07-42a8-8f6f-30130223e10d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/asset/img/user55.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/asset/img/user55.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Battery.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Battery.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/adapter.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adapter.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/add.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/add.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/adver2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/adver2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/avv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/avv.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/Park.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/Park.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/ace.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/ace.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/android.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/android.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/app.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/app.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/asus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/asus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/bLogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/bLogo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/davix.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/davix.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/dell.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/dell.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/fff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/fff.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/gateway.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/gateway.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/gigabyte.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/gigabyte.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/ibm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/ibm.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/intel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/intel.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/lenovo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/lenovo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/lg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/lg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/microsoft.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/microsoft.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/msi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/msi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/samsung.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/samsung.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/shuttle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/shuttle.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brand/toshiba.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/toshiba.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/charger.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/charger.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/coursehero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/coursehero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fav.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fav.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/internet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/internet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/keyboard.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/keyboard.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ram.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ram.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/repair.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/repair.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/sale.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/sale.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ssd.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ssd.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/team.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/team.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597384738.flirt-chocolate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597384738.flirt-chocolate.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597385224.JAMSON BLACK BARREL.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597385224.JAMSON BLACK BARREL.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597386149.sminoff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597386149.sminoff.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597408896.NEON.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597408896.NEON.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597409377.best-whisky.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597409377.best-whisky.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418706.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418706.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418728.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418728.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418759.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418759.3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418853.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418853.4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418939.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418939.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597418963.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597418963.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597419005.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597419005.3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597419067.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597419067.4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597494930.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597494930.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597588971.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597588971.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597637900.best-liquer-creae-600x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597637900.best-liquer-creae-600x600.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597637968.3-Bloom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597637968.3-Bloom.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597639595.ttttvvvv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597639595.ttttvvvv.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597639656.ttttvvvv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597639656.ttttvvvv.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1597742946.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1597742946.4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598349868.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598349868.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598415923.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598415923.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598416518.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598416518.3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598451519.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598451519.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598466970.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598466970.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598467279.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598467279.4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598790790.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598790790.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598790821.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598790821.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1598974674.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1598974674.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1599455456.3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1599455456.3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1599455987.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1599455987.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600189378.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600189378.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600255879.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600255879.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600255940.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600255940.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600256019.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600256019.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600256070.2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600256070.2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1600256098.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1600256098.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1602567486.4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1602567486.4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/product/1602668480.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1602668480.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cPartials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/trackOrder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/trackOrder.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +160,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../japcom" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -351,7 +258,9 @@
       <workItem from="1623218739494" duration="84000" />
       <workItem from="1623936784047" duration="1794000" />
       <workItem from="1623942920872" duration="541000" />
-      <workItem from="1623947873467" duration="2640000" />
+      <workItem from="1623947873467" duration="3543000" />
+      <workItem from="1623996429477" duration="1238000" />
+      <workItem from="1624033635322" duration="190000" />
     </task>
     <servers />
   </component>
