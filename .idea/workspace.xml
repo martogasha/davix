@@ -2,7 +2,179 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Gallery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_10_20_095523_create_galleries_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623127830.Screenshot from 2021-05-14 15-43-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623218369.usb-bluetooth Fine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623218458.Dell Keyboard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623218491.8-port-HDMI-Splitter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623218532.HDMI to VGA adapter with Audio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623220992.HDMI-to-VGA-adapter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221135.Rechargeable-mouse bluetooth wireless Mouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221372.Wireless Keyboard and Mouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221569.wifi dongle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221635.Type-C-to-HDMI-VGA-with-Audio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221674.Usb 3.0 Ethernet Adapter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221832.3 pin Fused Flower power cables.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221862.Back-to-Back-01-cable 1.5m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221904.HDMI hi speed Cable  1.5M-Flat-cable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623221971.VGA-to-VGA-20M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623222111.VGA 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623222293.vga-cable-10M (M-M).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623222350.VGA-Cable-1.5mtrs (M-M).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623222561.USB-Extension-Cable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623222888.extension 3M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623222938.USB-Extension-1.5M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223007.power-cable 1.5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223121.HDMI10M.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223229.HDMI 15metres.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223283.10m-HDMI-Cable-.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223326.5M cable-hdmi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223376.hdmi-3m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223452.2tb Hard disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223488.bnc power.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223566.cctv-power-supply.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623223608.dome 720.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623224147.HIK-1080p.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623224184.bullet 720.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225378.1080 bullet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225483.Dvr 16 channel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225512.Dvr 8 Channel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225538.Dvr 4 Channel ch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225927.Dvr 8 Channel fine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225956.cable 200m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623225999.cable 100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623226048.4TB-Hard-Drive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623226098.2tb Hard disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623226247.4TB-Hard-Drive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623226304.4u Cabinet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623226366.6u Cabinet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623226392.9 U cabinet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623303658.NVR 4 Channel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623303699.NVR 8 Channel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623303726.NVR 16 channel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623303820.128GB  Dual Drive Sandisk-otg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304159.op-binding-machine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304180.Black and Decker 600 Watt Blower.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304217.liebert-iton-1000-va-hero-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304257.light_wave_650.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304629.64Gb Dual-Drive-sandisk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304673.32Gb Dual drive  sandisk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304744.16Gb Dual drive  sandisk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304810.8Gb Sandisk Memory card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304866.16Gb  Sandisk Memory card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304942.32Gb Sandisk Memory card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623304997.64Gb Sandisk Memory card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305053.128Gb Sandisk Memory card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305123.128Gb Sandisk Flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305171.64Gb Sandisk flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305227.32Gb Sandisk flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305283.16Gb Sandisk flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305336.8Gb Sandisk flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305418.16GB  flash disk Advance.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305585.32GB  flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305793.64GB  flash disk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305882.64GB  mem card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623305935.32GB Memory-Card  Advance.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623306187.Advance 16Gb mem card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623306275.Advance 8Gb mem card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623306743.8-port.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623306916.CAT 6 UTP Cable.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623306951.rj45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307034.4u Cabinet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307353.6u Cabinet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307380.9 U cabinet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307431.TL-850RE-Range-Extender-e1547561697753.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307452.Cat-6-copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307524.pvc-trunking-500x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307558.CRTOOLNETa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307592.cat-5e-complete-faCEPLATE-copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307634.tenda router.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307681.Cable tester.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307710.switch tp link 5 port.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307743.mobily universal modem.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623307848.BARCODE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309037.Epson-TM-20ii.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309279.Epson EcoTank l3150 wifi All in one ink Tank Printer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309394.EB-S05-1-copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309486.Clarion ink.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309561.EPEBS04a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309615.EPEBS31a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309857.Hp 35A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623309897.hp laser 78A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623310130.Epson EcoTank l3150 wifi All in one ink Tank Printer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623310514.Kaspersky-Antivirus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623310707.Full Computer Set.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623310988.d-link-patch-cord-500x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623311860.Asus-19V-3.42A-laptop-charger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623311916.Dell Big pin adapter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623311954.Hp Big-pin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623312025.hp blue pin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623312065.Lenovo USB -20V-3.25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623312163.Samsung.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623312215.Toshiba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314013.2Gb Desktop Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314054.4Gb Desktop Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314111.8 Gb Desktop Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314142.16 Gb Desktop Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314314.2Gb Laptop  Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314349.4Gb Laptop  Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314385.8Gb Laptop  Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1623314436.16Gb Laptop  Ram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1625830387.Pixeled.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1625832851.USB TO ETHERNET.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1625833302.Usb Hub 3.0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633167311.8 CAMERA FULLPACKAGE.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633167417.8 CAMERA FULLPACKAGE.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633249528.2232620258.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633249951.WIFI Wireless CCTV Bulb Camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633250565.8 1080P Full Hd 2MP Night Vision Complete CCTV Cameras Kit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633250809.Dahua Cameras 4 Channel Kit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633250810.Dahua Cameras 4 Channel Kit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633252454.Electric-and-Razor-Wire-Fencing-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633252584.Dahua Cameras 4 Channel Kit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633253079.WIFI Wireless CCTV Bulb Camera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1633253238.Access Control Kit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634727735.MOMBASA CITY.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634727774.hilton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634727784.Cabins.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634727802.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634727811.hilton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733805.Resorts.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733816.NAIROBI CITY.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733833.Resorts.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733847.MOMBASA CITY.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733901.hilton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733910.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634733919.hilton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734084.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734095.hilton.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734570.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734577.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734586.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734595.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634734605.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634737032.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634737068.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/product/1634737100.safari.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/gallery.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/customer/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/43a26071-6ce6-481f-88d5-4e8510759068.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/43a26071-6ce6-481f-88d5-4e8510759068.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618809113.flash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618809113.flash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618809419.flash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618809419.flash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618809456.camera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618809456.camera.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618809830.Dell-USB-Business-Keyboard.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618809830.Dell-USB-Business-Keyboard.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618810090.mouse.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618810090.mouse.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618810180.Camera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618810180.Camera.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1618810226.router.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1618810226.router.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1624452599.Screenshot from 2021-06-21 21-50-08.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1624452599.Screenshot from 2021-06-21 21-50-08.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/product/1624452634.Screenshot from 2021-06-21 21-49-09.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/product/1624452634.Screenshot from 2021-06-21 21-49-09.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +332,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,11 +344,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
+      <recent name="$PROJECT_DIR$/resources/views/customer" />
+      <recent name="$PROJECT_DIR$/public/uploads" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/images/brand" />
-      <recent name="$PROJECT_DIR$/resources/views/customer" />
-      <recent name="$PROJECT_DIR$/resources/views/admin" />
-      <recent name="$PROJECT_DIR$/public/asset/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/customer" />
@@ -264,7 +436,9 @@
       <workItem from="1624444304665" duration="20000" />
       <workItem from="1624445168039" duration="863000" />
       <workItem from="1624450682169" duration="912000" />
-      <workItem from="1634048615017" duration="828000" />
+      <workItem from="1634048615017" duration="1677000" />
+      <workItem from="1634113877254" duration="605000" />
+      <workItem from="1634721808093" duration="11686000" />
     </task>
     <servers />
   </component>

@@ -40,6 +40,7 @@ Route::get('cctv','CategoryController@cctv');
 Route::get('laptops','CategoryController@laptops');
 Route::get('storages','CategoryController@storage');
 Route::get('software','CategoryController@software');
+Route::get('gallery','GalleryController@gallery');
 
 Route::resource('Login','LoginController');
 Route::post('placeOrder','CheckoutController@placeOrder');
@@ -64,9 +65,14 @@ Route::get('contactUs','AboutController@contact');
 Route::view('admin','admin.index');
 Route::get('admin/order','OrderController@index');
 Route::get('ajax','OrderController@getOrderDetails');
+Route::get('adminGallery','GalleryController@adminGallery');
+Route::post('deleteGalleryImage','GalleryController@deleteGalleryImage')->name('deleteGalleryImage');
+Route::post('storeImage','GalleryController@storeImage')->name('storeImage');
 Route::resource('stock','ProductController');
 Route::get('deleteProduct/{id}','ProductController@deleteProduct');
 Route::get('status/{id}','ProductController@status');
+Route::get('editModal','GalleryController@editModal');
+Route::post('editGalleryImage','GalleryController@editGalleryImage')->name('editGalleryImage');
 
 Route::post('eProduct','ProductController@eProduct');
 Route::get('editProductDetails/{id}','ProductController@editProductDetails');
