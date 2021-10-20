@@ -154,6 +154,12 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{url('adminGallery')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link" href="{{url('admin/order')}}" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-book-open nav-icon"></i>
                         Orders
