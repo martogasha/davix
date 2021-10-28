@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0e31eedf1952d3a22f4ad6ff03329d8",
+    "content-hash": "0cd484e77ab87474ff3585b53ad3bbf6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -808,6 +808,54 @@
                 "watermark"
             ],
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "kopokopo/k2-connect-php",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kopokopo/k2-connect-php.git",
+                "reference": "004f89da08c9ba0db74900af4518089f2fa7f1f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kopokopo/k2-connect-php/zipball/004f89da08c9ba0db74900af4518089f2fa7f1f7",
+                "reference": "004f89da08c9ba0db74900af4518089f2fa7f1f7",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kopokopo\\SDK\\": "src/",
+                    "Kopokopo\\SDK\\Requests\\": "src/requests",
+                    "Kopokopo\\SDK\\Helpers\\": "src/helpers",
+                    "Kopokopo\\SDK\\Data\\": "src/data",
+                    "Kopokopo\\SDK\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicollet Njora",
+                    "email": "nicollet.njora05@gmail.com"
+                }
+            ],
+            "description": "Kopokopo's php SDK",
+            "homepage": "https://github.com/kopokopo/k2-connect-php",
+            "support": {
+                "issues": "https://github.com/kopokopo/k2-connect-php/issues",
+                "source": "https://github.com/kopokopo/k2-connect-php/tree/v1.1.0"
+            },
+            "time": "2021-06-14T14:08:19+00:00"
         },
         {
             "name": "laravel/framework",
@@ -6737,5 +6785,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }
