@@ -58,10 +58,7 @@ Route::get('webDesign','InternetController@webDesign');
 Route::get('NetworkingService','InternetController@networking');
 Route::resource('about','AboutController');
 Route::get('contactUs','AboutController@contact');
-//mpesa routes
-Route::get('subscribe','MpesaController@subscribe');
-Route::post('getPayload','MpesaController@getPayload');
-Route::get('stkPush','MpesaController@stkPush');
+
 
 
 

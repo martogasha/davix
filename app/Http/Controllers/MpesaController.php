@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Kopokopo\SDK\Helpers\Auth;
 use Kopokopo\SDK\K2;
 class MpesaController extends Controller
 {
