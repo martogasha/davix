@@ -30,7 +30,7 @@ class MpesaController extends Controller
             'phoneNumber' => '0726155494',
             'amount' => 1,
             'email' => 'example@example.com',
-            'callbackUrl' => 'https://iconztech.com/getPayload',
+            'callbackUrl' => 'https://iconztech.com/api/getPayload',
             'accessToken' => $accessToken,
         ]);
         dd('ok');
@@ -50,7 +50,7 @@ class MpesaController extends Controller
         $webhooks = $K2->Webhooks();
         $response = $webhooks->subscribe([
             'eventType' => 'buygoods_transaction_received',
-            'url' => 'https://iconztech.com/getPayload',
+            'url' => 'https://iconztech.com/api/getPayload',
             'scope' => 'till',
             'scopeReference' => '000798',
             'accessToken' => $accessToken,
