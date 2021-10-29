@@ -74,7 +74,7 @@ class MpesaController extends Controller
         $webhooks = $K2->Webhooks();
 
         $json_str = file_get_contents('https://www.iconztech.com/api/storeWebhooks');
-        $response = $webhooks->webhookHandler($json_str, $_SERVER['2c27c134-7b65-46db-b59b-9f96d579511b']);
+        $response = $webhooks->webhookHandler($json_str, $_SERVER['a419432d-284a-4688-9535-bcf7314c3639']);
         dd($response);
     }
 }
