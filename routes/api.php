@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MpesaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 //mpesa routes
-Route::get('subscribe','MpesaController@subscribe');
-Route::post('storeWebhooks','MpesaController@storeWebhooks');
-Route::get('stkPush','MpesaController@stkPush');
+Route::get('authenticate', [MpesaController::class, 'authenticate']);
+Route::get('subscribe', [MpesaController::class, 'subscribe']);
+Route::get('stkPush', [MpesaController::class, 'stkPush']);
+Route::post('storeWebhooks', [MpesaController::class, 'storeWebhooks']);

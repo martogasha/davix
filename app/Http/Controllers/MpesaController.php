@@ -68,4 +68,14 @@ class MpesaController extends Controller
         $payload = $request->json()->all();
         Log::info($payload);
     }
+    public function authenticate(){
+        global $K2;
+        global $response;
+        $webhooks = $K2->Webhooks();
+
+        $json_str = file_get_contents('https://www.iconztech.com/api/storeWebhooks');
+        dd($json_str);
+        $response = $webhooks->webhookHandler($json_str, $_SERVER['2c27c134-7b65-46db-b59b-9f96d579511b']);
+        dd($response);
+    }
 }
