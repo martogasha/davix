@@ -66,7 +66,8 @@ class MpesaController extends Controller
     }
     public function storeWebhooks(Request $request){
         $payload = $request->json()->all();
-        Log::info($payload);
+        $result = implode($payload);
+        Log::info($result);
     }
     public function authenticate(){
         global $K2;
