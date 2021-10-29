@@ -64,7 +64,7 @@ class MpesaController extends Controller
         $response = $stk->getStatus($options);
         dd($response);
     }
-    public function getPayload(Request $request){
+    public function storeWebhooks(Request $request){
         $payload = $request->json()->all();
         Log::info($payload);
     }
