@@ -21,22 +21,19 @@ class MpesaController extends Controller
         $result = $tokens->getToken();
         $access = $result['data'];
         $accessToken = $access['accessToken'];
-        global $K2;
         $stk = $K2->StkService();
-        $result =[
+        $result = $stk->initiateIncomingPayment([
             'paymentChannel' => 'M-PESA STK Push',
             'tillNumber' => '000798',
             'firstName' => 'Jane',
             'lastName' => 'Doe',
-            'phoneNumber' => '0726155494',
+            'phoneNumber' => '+254726155494',
             'amount' => 1,
             'email' => 'example@example.com',
             'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
             'accessToken' => $accessToken,
-        ];
-        $response = $stk->paymentRequest($options);
-        dd($response);
-        echo json_encode($response);
+        ]);
+        dd($result);
     }
     public function subscribe(){
         $options = [
