@@ -27,7 +27,7 @@ class MpesaController extends Controller
             'tillNumber' => '000798',
             'firstName' => 'Jane',
             'lastName' => 'Doe',
-            'phoneNumber' => '0726155494',
+            'phoneNumber' => '+254726155494',
             'amount' => 1,
             'email' => 'example@example.com',
             'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
