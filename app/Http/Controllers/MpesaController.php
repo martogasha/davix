@@ -27,13 +27,15 @@ class MpesaController extends Controller
             'tillNumber' => '000798',
             'firstName' => 'Jane',
             'lastName' => 'Doe',
-            'phoneNumber' => '+254726155494',
+            'phoneNumber' => '0726155494',
             'amount' => 1,
             'email' => 'example@example.com',
             'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
             'accessToken' => $accessToken,
         ]);
-        dd('ok');
+        $response = $stk->paymentRequest($options);
+        dd($response);
+        echo json_encode($response);
     }
     public function subscribe(){
         $options = [
