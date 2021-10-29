@@ -27,6 +27,7 @@ class MpesaController extends Controller
             'tillNumber' => '000798',
             'firstName' => 'Jane',
             'lastName' => 'Doe',
+            'currency'=>'KES',
             'phoneNumber' => '+254726155494',
             'amount' => 1,
             'email' => 'example@example.com',
