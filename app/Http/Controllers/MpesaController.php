@@ -24,11 +24,11 @@ class MpesaController extends Controller
         $stk = $K2->StkService();
         $result = $stk->initiateIncomingPayment([
             'paymentChannel' => 'M-PESA STK Push',
-            'tillNumber' => 'K000798',
+            'tillNumber' => 'K967143',
             'firstName' => 'Jane',
             'lastName' => 'Doe',
             'currency'=>'KES',
-            'phoneNumber' => '+254726155494',
+            'phoneNumber' => '0727995279',
             'amount' => 1,
             'email' => 'example@example.com',
             'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
