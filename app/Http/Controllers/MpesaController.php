@@ -24,7 +24,7 @@ class MpesaController extends Controller
         $stk = $K2->StkService();
         $result = $stk->initiateIncomingPayment([
             'paymentChannel' => 'M-PESA STK Push',
-            'tillNumber' => 'K000798',
+            'tillNumber' => '000798',
             'firstName' => 'Jane',
             'lastName' => 'Doe',
             'currency'=>'KES',
