@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Kopokopo\SDK\Helpers\Auth;
 use Kopokopo\SDK\K2;
+use Session;
 class MpesaController extends Controller
 {
     public function stkPush(){
