@@ -61,7 +61,7 @@ class   CheckoutController extends Controller
                     'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
                     'accessToken' => $accessToken,
                 ]);
-                dd($result);
+                dd($result['status']);
 
                 return redirect()->back()->with('success','INPUT PIN');
             }
