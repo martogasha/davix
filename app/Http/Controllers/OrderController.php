@@ -24,7 +24,7 @@ class   OrderController extends Controller
         $totalSum=0;
         foreach ($checks as $check){
 
-            $sum = $check->product->product_price;
+            $sum = $check->order->product->product_price;
             $quant = $check->order_quantity;
 
             $total = $sum * $quant;
