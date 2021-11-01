@@ -12,6 +12,7 @@
                         <li class="active">Checkout</li>
                     </ul>
                 </div>
+                @include('flash-message')
                 <!-- =====  BREADCRUMB END===== -->
                 <form action="{{url('placeOrder')}}" method="post" id="placeOrderForm">
                     @csrf
@@ -124,6 +125,7 @@
                         </div>
                         <div id="collapsefive" class="panel-collapse collapse">
                             <div class="panel-body">
+                                @include('flash-message')
                                 <p>Please select the preferred payment method to use on this order.</p>
                                 <div class="radio">
                                     <label>
