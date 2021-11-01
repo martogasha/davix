@@ -84,6 +84,7 @@ class MpesaController extends Controller
            'reference'=>$input[0]['data']['attributes']['event']['resource']['reference'],
            'status'=>$input[0]['data']['attributes']['event']['resource']['status'],
            'system'=>$input[0]['data']['attributes']['event']['resource']['system'],
+           'amount'=>$input[0]['data']['attributes']['event']['resource']['amount'],
            'date'=>date("d-m-Y", strtotime($dateFormat)),
             'phone'=>$input[0]['data']['attributes']['event']['resource']['sender_phone_number'],
             'user_id'=>$user->id,
