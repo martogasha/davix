@@ -76,14 +76,13 @@ class MpesaController extends Controller
         $checkouts = $cart->item;
         $userPhone = User::where('id', \Illuminate\Support\Facades\Auth::id())->first();
         $duplicate = $request->json()->all();
-        Log::info($duplicate);
         $dub = array($duplicate);
         $input = array_unique($dub);
         $dateFormat = $input[0]['event']['resource']['origination_time'];
         $user = User::where('user_phone',$input[0]['event']['resource']['sender_phone_number'])->first();
         $store = Mpesa::create([
            'reference'=>$input[0]['event']['resource']['reference'],
-           'status'=>$input[0]['event']['resource']['status'],
+           'status'=>$input[0]['data']['attributes']['event']['resource']['status'],
            'system'=>$input[0]['event']['resource']['system'],
            'date'=>date("d-m-Y", strtotime($dateFormat)),
             'phone'=>$input[0]['event']['resource']['sender_phone_number'],
