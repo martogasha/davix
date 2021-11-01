@@ -7,6 +7,7 @@ use App\Order;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Kopokopo\SDK\K2;
 use Safaricom\Mpesa\Mpesa;
 use Session;
 
@@ -24,53 +25,44 @@ class   CheckoutController extends Controller
     }
     public function placeOrder(Request $request)
     {
-        $oldCart = Session::get('cat');
-        $cart = new Cat($oldCart);
-        $checkouts = $cart->item;
-        $userPhone = User::where('id', Auth::id())->first();
+        if (Auth::check()){
+            dd($request->all());
+            $phoneRaw = $request->phone;
+            $code = '+254';
+            $phoneNumber = $code.''.$phoneRaw;
+            $oldCart = Session::get('cat');
+            $cart = new Cat($oldCart);
+            $checkouts = $cart->item;
+            $userPhone = User::where('id', Auth::id())->first();
 
-        if (Auth::check()) {
             if ($request->cash =='mpesa'){
 
-                $token = Mpesa::generateSandBoxToken();
-                $user = $request->phone;
-                $consNumber = 254;
-                $tUser = $consNumber. $user;
-                $amount = $cart->totalPrice;
-                $shortCode = '174379';
-                $timestamp ='20201016213045';
-                $passKey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
-
-                $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
-                $password = base64_encode($shortCode.$passKey.$timestamp);
-                $curl = curl_init();
-                curl_setopt($curl, CURLOPT_URL, $url);
-                curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$token)); //setting custom header
-
-
-                $curl_post_data = array(
-                    //Fill in the request parameters with valid values
-                    'BusinessShortCode' => '174379',
-                    'Password' => $password,
-                    'Timestamp' => '20201016213045',
-                    'TransactionType' => 'CustomerPayBillOnline',
-                    'Amount' =>$amount,
-                    'PartyA' => $tUser,
-                    'PartyB' => '174379',
-                    'PhoneNumber' => $tUser,
-                    'CallBackURL' => 'https://kibe.braxlan.com/getPayment',
-                    'AccountReference' => 'Davix',
-                    'TransactionDesc' => 'davix'
-                );
-
-                $data_string = json_encode($curl_post_data);
-
-                curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($curl, CURLOPT_POST, true);
-                curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
-
-                $curl_response = curl_exec($curl);
-                print_r($curl_response);
+                // Do not hard code these values
+                $options = [
+                    'clientId' => 'J6IUCHendZ4SbNEAF6WWJZIFcKR2LCmy5hmrlkIVHcU',
+                    'clientSecret' => 'IDbzppyG-fXTgClVemBnh2irjcfUG_s8E4AD3xELMO4',
+                    'apiKey' => 'a3ee4134cc102a400aef96c3c9d1a635829f54d2',
+                    'baseUrl' => 'https://api.kopokopo.com'
+                ];
+                $K2 = new K2($options);
+                $tokens = $K2->TokenService();
+                $result = $tokens->getToken();
+                $access = $result['data'];
+                $accessToken = $access['accessToken'];
+                $stk = $K2->StkService();
+                $result = $stk->initiateIncomingPayment([
+                    'paymentChannel' => 'M-PESA STK Push',
+                    'tillNumber' => 'K967143',
+                    'firstName' => $request->name,
+                    'lastName' => 'Doe',
+                    'currency'=>'KES',
+                    'phoneNumber' => $phoneNumber,
+                    'amount' => $request->amount,
+                    'email' => $request->email,
+                    'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
+                    'accessToken' => $accessToken,
+                ]);
+                dd($result);
 
                 return redirect()->back()->with('success','INPUT PIN');
             }

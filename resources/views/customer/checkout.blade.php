@@ -106,6 +106,7 @@
                                             <tr>
                                                 <td class="text-right" colspan="4"><strong>Total:</strong></td>
                                                 <td class="text-right">Ksh:{{$totalPrice}}</td>
+                                                <input type="hidden" name="amount" value="{{$totalPrice}}">
                                             </tr>
                                             </tfoot>
                                         </table>
@@ -142,7 +143,7 @@
                                     <div class="pull-right mt_20">I have read and agree to the <a class="agree" href="#"><b>Terms &amp; Conditions</b></a>
                                         <input type="checkbox" value="1" name="agree" required>
                                         &nbsp;
-                                        <input type="submit" class="btn" data-loading-text="Loading..." id="button-payment-method" value="Place Order">
+                                        <input type="submit" class="btn" data-loading-text="Loading..." id="placeOrderButtom" value="Place Order">
                                     </div>
                                 </div>
 
@@ -200,7 +201,6 @@
      }
 
    });
-
 </script>
 </body>
 
