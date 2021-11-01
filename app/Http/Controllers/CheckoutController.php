@@ -26,9 +26,6 @@ class   CheckoutController extends Controller
     public function placeOrder(Request $request)
     {
         if (Auth::check()){
-            $phoneRaw = $request->phone;
-            $code = '+254';
-            $phoneNumber = $code.''.$phoneRaw;
             $oldCart = Session::get('cat');
             $cart = new Cat($oldCart);
             $checkouts = $cart->item;
@@ -55,38 +52,13 @@ class   CheckoutController extends Controller
                     'firstName' => $request->name,
                     'lastName' => 'Doe',
                     'currency'=>'KES',
-                    'phoneNumber' => $phoneNumber,
+                    'phoneNumber' => $request->phone,
                     'amount' => $request->amount,
                     'email' => $request->email,
                     'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
                     'accessToken' => $accessToken,
                 ]);
                 return redirect()->back()->with('success','INPUT PIN');
-            }
-            else {
-                $editUser = User::find($request->userId);
-                $editUser->user_name = $request->name;
-                if ($request->email) {
-                    $editUser->user_email = $request->email;
-                }
-                $editUser->user_phone = $request->phone;
-                $editUser->user_location = $request->location;
-                $editUser->save();
-
-
-                foreach ($checkouts as $checkout) {
-                    $phone = $request->phone;
-                    $order = new Order();
-                    $order->user_id = Auth::id();
-                    $order->product_id = $checkout['item']['id'];
-                    $order->order_quantity = $checkout['quantity'];
-                    $order->order_status = 'cash on delivery';
-                    $order->order_status1 = 'Awaiting Confirmation';
-                    $order->save();
-                }
-                $request->session()->forget('cat');
-
-                return redirect(url('success'))->with('success', 'Order Placed Successfully');
             }
         }
         else{

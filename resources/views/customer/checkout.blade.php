@@ -129,13 +129,6 @@
                                 <p>Please select the preferred payment method to use on this order.</p>
                                 <div class="radio">
                                     <label>
-                                        <input type="radio" checked="checked" value="cash" name="cash">
-                                        Cash On Delivery(<b>APPLICABLE WITHIN NAIROBI CBD</b>)
-                                    </label>
-                                </div>
-
-                                <div class="radio">
-                                    <label>
                                         <input type="radio" checked="checked" value="mpesa" name="cash">
                                         Mpesa </label>
                                     <h5 class="text-danger" id="mpesaId"><b>Please make sure you have the whole amount     (Ksh: {{$totalPrice}}) in your Mpesa account and put in the prompted Mpesa pin after placing order.</b></h5>
