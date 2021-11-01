@@ -100,4 +100,10 @@ class MpesaController extends Controller
         $response = $webhooks->webhookHandler($json_str, $_SERVER['a419432d-284a-4688-9535-bcf7314c3639']);
         dd($response);
     }
+    public function mpesaTransactions(){
+        $transactions = Mpesa::all();
+        return view('admin.mpesa',[
+            'transactions'=>$transactions
+        ]);
+    }
 }

@@ -82,6 +82,7 @@ Route::post('confirmOrder','OrderController@confirm');
 Route::get('orderDetails','OrderController@orderDetails');
 Route::resource('rating','RatingController');
 Route::get('getRatings','RatingController@getRatings');
+Route::get('admin/mpesaTransactions','MpesaController@mpesaTransactions');
 Route::resource('advert','AdvertController');
 
 Route::view('test','test');
