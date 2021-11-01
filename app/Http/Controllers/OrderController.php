@@ -71,7 +71,7 @@ class   OrderController extends Controller
 
     }
     public function orderDetails(){
-        $orders = Order::where('order_status1','Delivered')->get();
+        $orders = Order::where('order_status1','Delivered')->get()->unique('user_id');
         return view('admin.orderDetails',[
             'orders'=>$orders
         ]);
