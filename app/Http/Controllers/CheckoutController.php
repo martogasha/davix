@@ -26,7 +26,6 @@ class   CheckoutController extends Controller
     public function placeOrder(Request $request)
     {
         if (Auth::check()){
-            dd($request->all());
             $phoneRaw = $request->phone;
             $code = '+254';
             $phoneNumber = $code.''.$phoneRaw;
