@@ -78,14 +78,14 @@ class MpesaController extends Controller
         $duplicate = $request->json()->all();
         $dub = array($duplicate);
         $input = array_unique($dub);
-        $dateFormat = $input[0]['event']['resource']['origination_time'];
+        $dateFormat = $input[0]['data']['attributes']['event']['resource']['origination_time'];
         $user = User::where('user_phone',$input[0]['event']['resource']['sender_phone_number'])->first();
         $store = Mpesa::create([
-           'reference'=>$input[0]['event']['resource']['reference'],
+           'reference'=>$input[0]['data']['attributes']['event']['resource']['reference'],
            'status'=>$input[0]['data']['attributes']['event']['resource']['status'],
-           'system'=>$input[0]['event']['resource']['system'],
+           'system'=>$input[0]['data']['attributes']['event']['resource']['system'],
            'date'=>date("d-m-Y", strtotime($dateFormat)),
-            'phone'=>$input[0]['event']['resource']['sender_phone_number'],
+            'phone'=>$input[0]['data']['attributes']['event']['resource']['sender_phone_number'],
             'user_id'=>$user->id,
         ]);
         foreach ($checkouts as $checkout) {
