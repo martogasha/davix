@@ -89,17 +89,6 @@ class MpesaController extends Controller
             'phone'=>$input[0]['data']['attributes']['event']['resource']['sender_phone_number'],
             'user_id'=>$user->id,
         ]);
-        foreach ($checkouts as $checkout) {
-            $phone = $request->phone;
-            $order = new Order();
-            $order->user_id = \Illuminate\Support\Facades\Auth::id();
-            $order->product_id = $checkout['item']['id'];
-            $order->order_quantity = $checkout['quantity'];
-            $order->order_status = 'Mpesa';
-            $order->order_status1 = 'Awaiting Confirmation';
-            $order->save();
-        }
-        $request->session()->forget('cat');
         return view('customer.checkout')->with('success','PAYMENT RECEIVED');
     }
     public function authenticate(){

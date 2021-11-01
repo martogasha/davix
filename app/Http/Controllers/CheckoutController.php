@@ -53,11 +53,22 @@ class   CheckoutController extends Controller
                     'lastName' => 'Doe',
                     'currency'=>'KES',
                     'phoneNumber' => $request->phone,
-                    'amount' => $request->amount,
+                        'amount' => $request->amount,
                     'email' => $request->email,
                     'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
                     'accessToken' => $accessToken,
                 ]);
+                foreach ($checkouts as $checkout) {
+                    $phone = $request->phone;
+                    $order = new Order();
+                    $order->user_id = \Illuminate\Support\Facades\Auth::id();
+                    $order->product_id = $checkout['item']['id'];
+                    $order->order_quantity = $checkout['quantity'];
+                    $order->order_status = 'Mpesa';
+                    $order->order_status1 = 'Awaiting Confirmation';
+                    $order->save();
+                }
+                $request->session()->forget('cat');
                 return redirect()->back()->with('success','INPUT PIN');
             }
         }
