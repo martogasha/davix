@@ -61,6 +61,14 @@ class   CheckoutController extends Controller
                     'callbackUrl' => 'https://iconztech.com/api/storeWebhooks',
                     'accessToken' => $accessToken,
                 ]);
+                $editUser = User::find($request->userId);
+                $editUser->user_name = $request->name;
+                if ($request->email) {
+                    $editUser->user_email = $request->email;
+                }
+                $editUser->user_phone = $phoneNumber;
+                $editUser->user_location = $request->location;
+                $editUser->save();
                 return redirect()->back()->with('success','INPUT PIN');
             }
             else {

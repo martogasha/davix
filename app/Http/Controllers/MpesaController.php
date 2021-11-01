@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Cat;
+use App\Mpesa;
+use App\Order;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Kopokopo\SDK\Helpers\Auth;
@@ -66,8 +70,35 @@ class MpesaController extends Controller
         dd($response);
     }
     public function storeWebhooks(Request $request){
-        $payload = $request->json()->all();
-        Log::info($payload);
+        $oldCart = Session::get('cat');
+        $cart = new Cat($oldCart);
+        $checkouts = $cart->item;
+        $userPhone = User::where('id', \Illuminate\Support\Facades\Auth::id())->first();
+        $duplicate = $request->json()->all();
+        $dub = array($duplicate);
+        $input = array_unique($dub);
+        $dateFormat = $input[0]['event']['resource']['origination_time'];
+        $user = User::where('user_phone',$input[0]['event']['resource']['sender_phone_number'])->first();
+        $store = Mpesa::create([
+           'reference'=>$input[0]['event']['resource']['reference'],
+           'status'=>$input[0]['event']['resource']['status'],
+           'system'=>$input[0]['event']['resource']['system'],
+           'date'=>date("d-m-Y", strtotime($dateFormat)),
+            'phone'=>$input[0]['event']['resource']['sender_phone_number'],
+            'user_id'=>$user->id,
+        ]);
+        foreach ($checkouts as $checkout) {
+            $phone = $request->phone;
+            $order = new Order();
+            $order->user_id = \Illuminate\Support\Facades\Auth::id();
+            $order->product_id = $checkout['item']['id'];
+            $order->order_quantity = $checkout['quantity'];
+            $order->order_status = 'Mpesa';
+            $order->order_status1 = 'Awaiting Confirmation';
+            $order->save();
+        }
+        $request->session()->forget('cat');
+        return view('customer.checkout')->with('success','PAYMENT RECEIVED');
     }
     public function authenticate(){
         global $K2;

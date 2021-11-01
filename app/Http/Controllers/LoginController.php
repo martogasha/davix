@@ -50,10 +50,13 @@ class LoginController extends Controller
             return redirect()->back()->with('error', 'Phone Number Already Used');
 
         }
+            $phoneRaw = $request->phone;
+            $code = '+254';
+            $phoneNumber = $code.''.$phoneRaw;
             $register = User::create([
                 'user_name'=>$request->input('name'),
                 'user_email'=>$request->input('email'),
-                'user_phone'=>$request->input('phone'),
+                'user_phone'=>$phoneNumber,
                 'user_location'=>$request->input('location'),
                 'user_role'=> 1,
                 'password' => Hash::make($request['password']),

@@ -15,6 +15,13 @@ class CreateMpesasTable extends Migration
     {
         Schema::create('mpesas', function (Blueprint $table) {
             $table->id();
+            $table->integer('amount');
+            $table->string('status');
+            $table->string('system');
+            $table->integer('user_id');
+            $table->string('date');
+            $table->string('phone');
+            $table->string('reference')->unique();
             $table->timestamps();
         });
     }
