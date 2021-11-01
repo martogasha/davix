@@ -276,9 +276,15 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active-page" href="{{url('admin/order')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" href="{{url('admin/order')}}" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="icon-book-open nav-icon"></i>
                         Orders
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active-page" href="{{url('admin/mpesaTransactions')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Mpesa
                     </a>
                 </li>
                 <li class="nav-item dropdown">
