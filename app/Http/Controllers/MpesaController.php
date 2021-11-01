@@ -76,6 +76,7 @@ class MpesaController extends Controller
         $checkouts = $cart->item;
         $userPhone = User::where('id', \Illuminate\Support\Facades\Auth::id())->first();
         $duplicate = $request->json()->all();
+        Log::info($duplicate);
         $dub = array($duplicate);
         $input = array_unique($dub);
         $dateFormat = $input[0]['event']['resource']['origination_time'];
