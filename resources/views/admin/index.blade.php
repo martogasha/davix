@@ -356,7 +356,7 @@
                                             <div class="progress progress-dot">
                                                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="107" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <h4>{{\App\Rating::all()->count()}}</h4>
+                                            <h4>Ksh: {{\App\Rating::all()->count()}}</h4>
                                         </div>
                                     </a>
                                 </div>

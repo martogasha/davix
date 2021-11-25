@@ -22,6 +22,17 @@ class ProductController extends Controller
             return redirect(url('Login'));
         }
     }
+    public function blog(){
+        $oldCart = Session::get('cat');
+        $cart = new Cat($oldCart);
+        return view('customer.blog',[
+            'products'=>$cart->item,
+            'totalPrice'=>$cart->totalPrice
+        ]);
+    }
+    public function blogDetail($id){
+
+    }
     public function home(){
         $bests = Product::where('product_category','bestSelling')->get();
         $homes = Product::where('product_category','hardDisk')->get();

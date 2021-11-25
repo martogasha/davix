@@ -19,6 +19,8 @@ Route::get('lipa', 'CheckoutController@lipaNaMpesa');
 
 //customer Routes
 Route::get('/','ProductController@home');
+Route::get('blog','ProductController@blog');
+Route::get('blogDetail/{id}','ProductController@blogDetail');
 Route::resource('productDetail','ProductDetailController');
 Route::resource('cart','CartController');
 Route::post('cartOne','CartController@cartOne');
