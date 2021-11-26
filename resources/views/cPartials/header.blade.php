@@ -34,10 +34,9 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm2jbUoX9T_MylOzVAaRiXKauyh2DXn_E&callback=initMap&libraries=&v=weekly"
-        defer
-    >
-
-    </script>
+        defer></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6942368996711457"
+            crossorigin="anonymous"></script>
 
 </head>
 <body>
