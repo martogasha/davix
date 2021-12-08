@@ -1,7 +1,6 @@
     @include('cPartials.header')
     <title>Icons Computer - Home</title>
 
-                    <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="images/left1.jpg" alt="Left Banner" class="img-responsive" /></a> </div>
                     <div class="left-cms left-sidebar-widget mb_50">
                         <ul>
                             <li>
