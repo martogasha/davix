@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec19476-ec4a-461b-ba7a-c98e9f8d3d3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/payment.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/478d631d-0b19-43b2-9c2f-574ba9d0ed1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/478d631d-0b19-43b2-9c2f-574ba9d0ed1d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cPartials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cPartials/footer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -163,7 +167,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -175,11 +179,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/views/customer" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/public/uploads" />
-      <recent name="$PROJECT_DIR$/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/customer" />
@@ -283,7 +287,13 @@
       <workItem from="1637841672732" duration="4683000" />
       <workItem from="1637910648931" duration="60000" />
       <workItem from="1637911336070" duration="719000" />
-      <workItem from="1638943928562" duration="680000" />
+      <workItem from="1638943928562" duration="1465000" />
+      <workItem from="1639732468638" duration="1083000" />
+      <workItem from="1639818572359" duration="20000" />
+      <workItem from="1639821195532" duration="10000" />
+      <workItem from="1639834569132" duration="2860000" />
+      <workItem from="1640180168392" duration="367000" />
+      <workItem from="1640264671545" duration="311000" />
     </task>
     <servers />
   </component>

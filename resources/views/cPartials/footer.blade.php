@@ -53,7 +53,7 @@
                     <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
-            <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="" alt="Lipa na Mpesa" class="img-responsive"/></a> </div>
+            <div class="left_banner left-sidebar-widget mt_30 mb_50"> <a href="#"><img src="{{asset('images/payment.png')}}" alt="Lipa na Mpesa" style="height: 200px;width: 200px" class="img-responsive"/></a> </div>
 
         </div>
     </div>
