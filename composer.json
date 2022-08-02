@@ -15,6 +15,7 @@
         "intervention/image": "^2.5",
         "kopokopo/k2-connect-php": "^1.1",
         "laravel/framework": "^7.0",
+        "laravel/helpers": "^1.5",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
         "safaricom/mpesa": "^1.0"

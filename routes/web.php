@@ -20,7 +20,7 @@ Route::get('lipa', 'CheckoutController@lipaNaMpesa');
 //customer Routes
 Route::get('/','ProductController@home');
 Route::get('blog','ProductController@blog');
-Route::get('blogDetail/{id}','ProductController@blogDetail');
+Route::get('blog/{id}/{name}','ProductController@blogDetail');
 Route::resource('productDetail','ProductDetailController');
 Route::resource('cart','CartController');
 Route::post('cartOne','CartController@cartOne');
@@ -68,6 +68,10 @@ Route::get('contactUs','AboutController@contact');
 //admin Routes
 Route::view('admin','admin.index');
 Route::get('admin/order','OrderController@index');
+Route::get('admin/blog','BlogController@index');
+Route::get('edit/{id}','BlogController@edit');
+Route::post('eBlog','BlogController@eBlog');
+Route::post('storeBlog','BlogController@storeBlog');
 Route::get('ajax','OrderController@getOrderDetails');
 Route::get('adminGallery','GalleryController@adminGallery');
 Route::post('deleteGalleryImage','GalleryController@deleteGalleryImage')->name('deleteGalleryImage');

@@ -248,6 +248,12 @@
                         Product Rating
                     </a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="{{url('admin/blog')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-book-open nav-icon"></i>
+                        Blog
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>

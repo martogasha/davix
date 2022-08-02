@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Advert;
+use App\Blog;
 use App\Cat;
 use App\Product;
 use Illuminate\Http\Request;
@@ -25,12 +26,23 @@ class ProductController extends Controller
     public function blog(){
         $oldCart = Session::get('cat');
         $cart = new Cat($oldCart);
+        $blogs = Blog::all();
         return view('customer.blog',[
             'products'=>$cart->item,
-            'totalPrice'=>$cart->totalPrice
+            'totalPrice'=>$cart->totalPrice,
+            'blogs'=>$blogs
         ]);
     }
-    public function blogDetail($id){
+    public function blogDetail($id,$name){
+        $detail = Blog::find($id);
+        $oldCart = Session::get('cat');
+        $cart = new Cat($oldCart);
+        return view('customer.blogDetail',[
+            'products'=>$cart->item,
+            'totalPrice'=>$cart->totalPrice,
+            'detail'=>$detail,
+
+        ]);
 
     }
     public function home(){

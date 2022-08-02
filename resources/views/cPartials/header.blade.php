@@ -139,6 +139,8 @@
                             <li> <a href="{{url('shop')}}">Shop</a></li>
                             <li class="dropdown"> <a href="{{url('gallery')}}">Gallery</a>
                             </li>
+                            <li> <a href="{{url('blog')}}">Blog</a></li>
+
                             <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services </a>
                                 <ul class="dropdown-menu">
                                     <li> <a href="{{url('cameraService')}}">CCTV and Surveillance System</a></li>
