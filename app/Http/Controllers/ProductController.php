@@ -106,6 +106,17 @@ class ProductController extends Controller
             $file->move('uploads/product/', $filename);
             $pictures->product_image = $filename;
         }
+        if ($request->imageOne) {
+            $file = $request->file('imageOne');
+            $extension = $file->getClientOriginalName();
+            $filename = time() . '.' . $extension;
+            $resize = Image::make($file->getRealPath());
+            $resize->resize(500, 500, function ($constraint){
+                $constraint->aspectRatio();
+            });
+            $file->move('uploads/product/', $filename);
+            $pictures->product_image1 = $filename;
+        }
 
         $pictures->save();
 
@@ -139,6 +150,17 @@ class ProductController extends Controller
             });
             $file->move('uploads/product/', $filename);
             $edit->product_image = $filename;
+        }
+        if ($request->image1) {
+            $file = $request->file('image1');
+            $extension = $file->getClientOriginalName();
+            $filename = time() . '.' . $extension;
+            $resize = Image::make($file->getRealPath());
+            $resize->resize(500, 500, function ($constraint){
+                $constraint->aspectRatio();
+            });
+            $file->move('uploads/product/', $filename);
+            $edit->product_image1 = $filename;
         }
         $edit->product_name = $request->name;
         $edit->product_desc = $request->desc;
