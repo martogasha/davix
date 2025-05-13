@@ -304,6 +304,9 @@
                         <input type="file" name="image">
                     </div>
                     <div class="form-group">
+                        <input type="file" name="imageOne">
+                    </div>
+                    <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Product Name:</label>
                         <input type="text" class="form-control" name="name" id="recipient-name">
                     </div>

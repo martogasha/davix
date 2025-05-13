@@ -488,11 +488,20 @@
                                 <span class="expand">+</span>
                             </div>
                         </a>
+                        <a href="{{asset('uploads/product/'.$product->product_image1)}}" class="effects">
+                            <img src="{{asset('uploads/product/'.$product->product_image1)}}" class="img-fluid" alt="Wafi Admin">
+                            <div class="overlay">
+                                <span class="expand">+</span>
+                            </div>
+                        </a>
                             <form action="{{url('eProduct')}}" method="post" enctype="multipart/form-data">
                             @csrf
                                 <input type="hidden" value="{{$product->id}}" name="prodId">
                             <div class="form-group">
                                 <input type="file" name="image">
+                            </div>
+                            <div class="form-group">
+                                <input type="file" name="image1">
                             </div>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Product Name:</label>
@@ -551,9 +560,9 @@
                                         <option value="GIGABYTE">GIGABYTE</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-info">Edit</button>
+                    <button type="submit" class="btn btn-info">Edit</button>
 
-                        </form>
+        </form>
                     </div>
                     @if($product->status==0)
                     <a href="{{url('status',$product->id)}}"><button class="btn btn-info">
